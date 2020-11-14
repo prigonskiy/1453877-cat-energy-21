@@ -5,7 +5,7 @@
   "devDependencies": {
     "@htmlacademy/editorconfig-cli": "1.0.0",
     "stylelint": "13.7.2",
-    "stylelint-config-htmlacademy": "0.1.4"
+    "stylelint-config-htmlacademy": "^0.1.4"
   },
   "scripts": {
     "editorconfig": "editorconfig-cli",
