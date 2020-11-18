@@ -1,0 +1,18 @@
+.slider__list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.example__control-button {
+  font-size: 16px;
+  line-height: 20px;
+  text-transform: uppercase;
+  border: none;
+  background: none;
+}
+
+.example__control-button:hover,
+.example__control-button:active {
+  cursor: pointer;
+}

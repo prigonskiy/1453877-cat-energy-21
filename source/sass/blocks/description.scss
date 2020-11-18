@@ -1,0 +1,21 @@
+.description__title {
+  font-size: 36px;
+  line-height: 40px;
+  font-style: normal;
+  font-weight: normal;
+  margin: 0;
+  padding: 0;
+}
+
+.description__list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.description__item {
+  color: $text-light;
+  font-family: "Arial", sans-serif;
+  font-size: 14px;
+  line-height: 18px;
+}

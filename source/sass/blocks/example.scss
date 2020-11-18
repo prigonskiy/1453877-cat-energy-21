@@ -1,0 +1,47 @@
+.example {
+  background-color: $basic-background-dark;
+}
+
+.example__title {
+  margin: 0;
+  padding: 0;
+  font-size: 36px;
+  line-height: 40px;
+  font-weight: 400;
+}
+
+.example__info {
+  color: $text-light;
+  font-family: "Arial", sans-serif;
+  font-size: 14px;
+  line-height: 18px;
+}
+
+.example__list {
+  margin: 0;
+  padding: 0;
+}
+
+.example__number {
+  margin: 0;
+  padding: 0;
+  text-transform: uppercase;
+  font-size: 24px;
+  line-height: 24px;
+}
+
+.example__description {
+  margin: 0;
+  padding: 0;
+  font-family: "Arial", sans-serif;
+  font-size: 12px;
+  line-height: 12px;
+  text-transform: lowercase;
+  color: $text-light;
+}
+
+.example__cost {
+  font-size: 14px;
+  line-height: 20px;
+  text-transform: uppercase;
+}

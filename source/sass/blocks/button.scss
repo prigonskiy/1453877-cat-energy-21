@@ -1,0 +1,19 @@
+.button {
+  display: block;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: $basic-white;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 18px;
+  background-color: $accent-main;
+}
+
+.button:hover {
+  background-color: $accent-main-hover;
+}
+
+.button:active {
+  color: rgba(255, 255, 255, 0.3);
+}
