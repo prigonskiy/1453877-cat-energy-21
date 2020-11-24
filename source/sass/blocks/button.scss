@@ -1,0 +1,22 @@
+.button {
+  display: block;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: $basic-white;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 18px;
+  background-color: $accent-main;
+  margin: 0 20px;
+  padding: 11px 0;
+  text-align: center;
+}
+
+.button:hover {
+  background-color: $accent-main-hover;
+}
+
+.button:active {
+  color: rgba(255, 255, 255, 0.3);
+}
