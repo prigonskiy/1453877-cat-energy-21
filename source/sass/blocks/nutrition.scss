@@ -1,5 +1,14 @@
 .nutrition {
-  background-color: $accent-fill; //временно!
+  min-width: 280px;
+}
+
+.nutrition__promo-background {
+  background: $text-strong url("../img/promo-background.png") 65% no-repeat;
+}
+
+.nutrition__overlay {
+  background-color: $accent-fill;
+  min-height: 302px;
 }
 
 .nutrition__header {
@@ -10,6 +19,10 @@
   line-height: 36px;
   padding: 0;
   margin: 0;
+  padding-top: 27px;
+  padding-left: 20px;
+  padding-right: 20px;
+  text-align: center;
 }
 
 .nutrition__call-to-action {
@@ -21,5 +34,13 @@
   text-transform: uppercase;
   padding: 0;
   margin: 0;
+  padding-top: 25px;
+  text-align: center;
 }
 
+.nutrition__product-image {
+  display: block;
+  margin: 0 auto;
+  margin-top: -135px;
+  margin-bottom: 3px;
+}

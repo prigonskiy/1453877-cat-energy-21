@@ -4,15 +4,55 @@
   padding: 0;
 }
 
-.example__control-button {
+.slider__item {
+  display: none;
+  text-align: center;
+  padding-bottom: 13px;
+}
+
+.slider__item--active {
+  display: block;
+}
+
+.slider__controls {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 25px;
+}
+
+.slider__control-button {
   font-size: 16px;
   line-height: 20px;
   text-transform: uppercase;
   border: none;
   background: none;
+  min-width: 70px;
+  padding: 10px 0;
 }
 
-.example__control-button:hover,
-.example__control-button:active {
+.slider__control-button:hover,
+.slider__control-button:active,
+.slider__control-scroll:hover,
+.slider__control-scroll:active {
   cursor: pointer;
+}
+
+.slider__control-scale {
+  box-sizing: border-box;
+  width: 84px;
+  height: 14px;
+  background-color: $basic-white;
+  border: 1px solid $border-list;
+  border-radius: 6px;
+}
+
+.slider__control-scroll {
+  box-sizing: border-box;
+  width: 35px;
+  height: 6px;
+  border-radius: 3px;
+  background-color: $accent-main;
+  margin-top: 3px;
+  margin-left: 5px;
 }

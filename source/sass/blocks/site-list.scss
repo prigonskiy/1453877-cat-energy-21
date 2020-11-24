@@ -4,7 +4,20 @@
   list-style: none;
 }
 
+.site-list__item:first-of-type {
+  border-top: 1px solid $border-menu;
+}
+
+.site-list__item {
+  border-bottom: 1px solid $border-menu;
+}
+
 .site-list__link {
+  display: block;
+  text-align: center;
+  padding-top: 23px;
+  padding-bottom: 23px;
+  width: 100%;
   text-transform: uppercase;
   text-decoration: none;
   font-size: 20px;

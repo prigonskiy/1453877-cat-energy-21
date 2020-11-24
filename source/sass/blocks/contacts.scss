@@ -1,4 +1,11 @@
+.contacts {
+  display: flex;
+  justify-content: space-between;
+  padding: 28px 20px;
+}
+
 .contacts__call-to-action {
+  width: 140px;
   margin: 0;
   padding: 0;
   text-transform: uppercase;
@@ -8,6 +15,7 @@
 }
 
 .contacts__address {
+  width: 140px;
   font-family: "Arial", sans-serif;
   color: $text-light;
   font-style: normal;

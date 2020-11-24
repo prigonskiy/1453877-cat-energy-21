@@ -1,3 +1,16 @@
+.copyright {
+  padding: 0 20px;
+}
+
+.copyright__wrapper {
+  border-top: 1px solid $border-block;
+  padding: 21px 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  min-width: 280px;
+}
+
 .copyright__link {
   text-decoration: none;
   font-family: "Arial", sans-serif;

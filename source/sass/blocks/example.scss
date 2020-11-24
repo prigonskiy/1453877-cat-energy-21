@@ -1,25 +1,45 @@
 .example {
   background-color: $basic-background-dark;
+  min-width: 280px;
 }
 
 .example__title {
   margin: 0;
-  padding: 0;
+  padding: 0 20px;
   font-size: 36px;
   line-height: 40px;
   font-weight: 400;
+  padding-top: 27px;
+  padding-bottom: 33px;
 }
 
 .example__info {
+  margin: 0;
+  padding: 0 20px;
   color: $text-light;
   font-family: "Arial", sans-serif;
   font-size: 14px;
   line-height: 18px;
+  padding-bottom: 25px;
+  padding-right: 21px;
 }
 
 .example__list {
   margin: 0;
-  padding: 0;
+  padding: 0 20px;
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 34px;
+}
+
+.example__item {
+  position: relative;
+  width: 124px;
+  text-align: center;
+  padding-top: 14px;
+  padding-bottom: 16px;
+  border: 1px solid $border-list;
+  border-radius: 3px;
 }
 
 .example__number {
@@ -31,17 +51,26 @@
 }
 
 .example__description {
+  position: absolute;
   margin: 0;
-  padding: 0;
+  padding: 0 10px;
   font-family: "Arial", sans-serif;
   font-size: 12px;
   line-height: 12px;
   text-transform: lowercase;
   color: $text-light;
+  background-color: $basic-background-dark;
+  width: 70px;
+  bottom: -15px;
+  left: 50%;
+  margin-right: -50%;
+  transform: translateX(-50%);
 }
 
 .example__cost {
   font-size: 14px;
   line-height: 20px;
   text-transform: uppercase;
+  text-align: center;
+  padding-bottom: 42px;
 }

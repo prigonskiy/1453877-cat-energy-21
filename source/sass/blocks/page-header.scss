@@ -1,0 +1,23 @@
+.page-header__top-wrapper {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  min-height: 65px;
+  padding: 0 20px;
+  min-width: 280px;
+}
+
+.page-header__nav-toggle {
+  border: none;
+  outline: none;
+  background: url("../../img/toggle_burger.svg") no-repeat;
+  width: 24px;
+  height: 16px;
+  box-sizing: content-box;
+}
+
+.page-header__nav-toggle:hover,
+.page-header__nav-toggle:active {
+  cursor: pointer;
+}
