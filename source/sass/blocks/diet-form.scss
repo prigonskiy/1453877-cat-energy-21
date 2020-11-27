@@ -1,0 +1,216 @@
+.diet__form {
+  padding-right: 20px;
+}
+
+.diet-form__description {
+  text-transform: uppercase;
+  font-size: 14px;
+  line-height: 18px;
+  padding: 0 20px;
+}
+
+.diet-form__fieldset {
+  position: relative;
+  margin: 0;
+  border: none;
+  padding: 0 20px;
+  min-width: 280px;
+}
+
+.diet-form__fieldset--personal {
+  padding-top: 40px;
+  padding-bottom: 24px;
+}
+
+.diet-form__fieldset--type {
+  padding-top: 22px;
+  padding-bottom: 20px;
+}
+
+.diet-form__fieldset--additional {
+  padding-bottom: 34px;
+}
+
+.diet-form__fieldset--personal,
+.diet-form__fieldset--type {
+  border-bottom: 1px solid $border-block;
+}
+
+.diet-form__fieldset--owner::before,
+.diet-form__fieldset--habits::before,
+.diet-form__fieldset--additional::before {
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  background-color: $accent-main;
+  content: "";
+  top: 40px;
+}
+
+.diet-form__list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.diet-form__item {
+  display: flex;
+  align-items: center;
+  margin-bottom: 13px;
+}
+
+.diet-form__item:nth-last-child(1) {
+  margin-bottom: 0;
+}
+
+.diet-form__legend {
+  max-width: 205px;
+  position: relative;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 24px;
+  line-height: 26px;
+  color: $basic-black;
+  padding-right: 15px;
+  padding-top: 24px;
+  padding-bottom: 35px;
+  background-color: $basic-white;
+}
+
+.diet-form__label {
+  position: relative;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 18px;
+  text-transform: uppercase;
+  padding-right: 15px;
+}
+
+.diet-form__label--text {
+  color: $text-light;
+}
+
+.diet-form__label--radio {
+  color: $text-less-dark;
+  padding: 6px 0;
+  padding-left: 45px;
+}
+
+.diet-form__label--checkbox {
+  color: $text-less-dark;
+  padding: 6px 0;
+  padding-left: 45px;
+}
+
+.diet-form__text-input {
+  outline: none;
+  box-sizing: border-box;
+  border: 1px solid $border-input;
+  border-radius: 0;
+  text-transform: uppercase;
+  color: $text-light;
+  font-size: 16px;
+  line-height: 18px;
+  font-style: normal;
+  font-weight: normal;
+  padding: 13px 15px;
+  flex-grow: 1;
+}
+
+.diet-form__text-input:hover {
+  border-color: $border-list;
+}
+
+.diet-form__text-input:focus {
+  border: 2px solid $text-light;
+  padding: 12px 14px;
+}
+
+.diet-form__radio-input + .diet-form__label--radio::before {
+  content: "";
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  top: 0;
+  left: 0;
+  background-repeat: no-repeat;
+  background-image: url("../../img/icon_radio-off.svg");
+}
+
+.diet-form__radio-input:hover + .diet-form__label--radio::before {
+  background-image: url("../../img/icon_radio-off_hover.svg");
+}
+
+.diet-form__radio-input:disabled + .diet-form__label--radio::before {
+  background-image: url("../../img/icon_radio-off_disabled.svg");
+}
+
+.diet-form__radio-input:checked + .diet-form__label--radio::before {
+  background-image: url("../../img/icon_radio-on.svg");
+}
+
+.diet-form__radio-input:checked:hover + .diet-form__label--radio::before {
+  background-image: url("../../img/icon_radio-on_hover.svg");
+}
+
+.diet-form__radio-input:checked:disabled + .diet-form__label--radio::before {
+  background-image: url("../../img/icon_radio-on_disabled.svg");
+}
+
+.diet-form__fieldset--habits {
+  min-width: 280px;
+}
+
+.diet-form__textarea {
+  box-sizing: border-box;
+  text-transform: uppercase;
+  color: $text-light;
+  font-size: 16px;
+  line-height: 18px;
+  width: 100%;
+  min-height: 150px;
+  outline: none;
+  border: 1px solid $border-input;
+  padding: 10px 15px;
+}
+
+.diet-form__checkbox-input + .diet-form__label--checkbox::before {
+  content: "";
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  top: 0;
+  left: 0;
+  background-repeat: no-repeat;
+  background-image: url("../../img/icon_check-off.svg");
+}
+
+.diet-form__checkbox-input:hover + .diet-form__label--checkbox::before {
+  background-image: url("../../img/icon_check-off_hover.svg");
+}
+
+.diet-form__checkbox-input:disabled + .diet-form__label--checkbox::before {
+  background-image: url("../../img/icon_check-off_disabled.svg");
+}
+
+.diet-form__checkbox-input:checked + .diet-form__label--checkbox::before {
+  background-image: url("../../img/icon_check-on.svg");
+}
+
+.diet-form__checkbox-input:checked:hover + .diet-form__label--checkbox::before {
+  background-image: url("../../img/icon_check-on_hover.svg");
+}
+
+.diet-form__checkbox-input:checked:disabled + .diet-form__label--checkbox::before {
+  background-image: url("../../img/icon_check-on_disabled.svg");
+}
+
+.diet-form__disclaimer {
+  font-family: Arial;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 16px;
+  text-align: center;
+}

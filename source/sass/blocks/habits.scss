@@ -1,0 +1,30 @@
+.habits {
+  margin: 0;
+  padding: 0 20px;
+  border: none;
+}
+
+.habits__legend {
+  margin: 0;
+  padding: 0;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 24px;
+  line-height: 26px;
+  width: 225px;
+  background-color: $basic-white;
+  padding-top: 25px;
+  padding-bottom: 35px;
+}
+
+.habits__textarea {
+  width: 100%;
+  padding: 10px 15px;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 18px;
+  color: $text-light;
+  min-height: 130px;
+  text-transform: uppercase;
+}
