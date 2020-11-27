@@ -37,8 +37,5 @@
   ],
   "engines": {
     "node": "14.15.0"
-  },
-  "dependencies": {
-    "normalize.css": "^8.0.1"
   }
 }
