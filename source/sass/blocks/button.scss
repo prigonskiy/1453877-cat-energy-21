@@ -8,9 +8,9 @@
   font-size: 14px;
   line-height: 18px;
   background-color: $accent-main;
-  margin: 0 20px;
   padding: 11px 0;
   text-align: center;
+  width: 100%;
 }
 
 .button:hover {
@@ -19,4 +19,24 @@
 
 .button:active {
   color: rgba(255, 255, 255, 0.3);
+}
+
+.button--more {
+  padding: 20px 0;
+  background-color: $basic-background;
+  color: $text-light;
+  font-size: 16px;
+  line-height: 20px;
+}
+
+.button--more:hover {
+  background-color: $basic-background-hover;
+}
+
+.button--more:active {
+  color: rgba(68, 68, 68, 0.3);
+}
+
+.button--submit {
+  border: none;
 }

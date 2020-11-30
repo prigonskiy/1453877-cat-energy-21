@@ -1,0 +1,115 @@
+.supplement-goods {
+  margin: 0;
+  min-width: 280px;
+}
+
+.supplement-goods__header {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 24px;
+  line-height: 24px;
+  background-color: $basic-white;
+  padding: 0 20px;
+}
+
+.supplement-goods__list {
+  margin: 0;
+  padding: 25px 20px;
+  list-style: none;
+}
+
+.supplement-goods__item {
+  min-height: 130px;
+  border-top: 1px solid $border-list;
+}
+
+.supplement-goods__item:nth-last-child(1) {
+  border-bottom: 1px solid $border-list;
+}
+
+.supplement-goods__card {
+  padding-top: 13px;
+  padding-bottom: 19px;
+}
+
+.supplement-goods__name {
+  color: $text-less-dark;
+  text-transform: uppercase;
+  padding: 0;
+  padding-bottom: 13px;
+  margin: 0;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 16px;
+}
+
+.supplement-goods__table {
+  font-family: "Arial", sans-serif;
+  font-weight: normal;
+  font-style: normal;
+  font-size: 12px;
+  line-height: 16px;
+  color: $text-light;
+  border-spacing: 0;
+  border: none;
+  width: 100%;
+  padding-bottom: 15px;
+}
+
+.supplement-goods__line {
+  padding: 0;
+  margin: 0;
+  border-spacing: 0;
+}
+
+.supplement-goods__row {
+  padding: 2px 0;
+  margin: 0;
+  border-spacing: 0;
+}
+
+.supplement-goods__row--spec {
+  text-align: left;
+}
+
+.supplement-goods__row--value {
+  text-align: right;
+}
+
+.supplement-goods__promo {
+  padding: 0 20px;
+  height: 289px;
+}
+
+.supplement-goods__background {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  margin-left: auto;
+  margin-right: auto;
+  height: 289px;
+  width: 280px;
+  background: url("../img/supplement-goods__promo.png");
+  background-repeat: no-repeat;
+}
+
+.supplement-goods__icon {
+  display: block;
+  background-image: url("../img/description-gift.svg");
+  width: 78px;
+  height: 80px;
+}
+
+.supplement-goods__description {
+  font-family: "Arial", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 20px;
+  color: $basic-white;
+  text-align: center;
+  width: 161px;
+  min-height: 60px;
+}

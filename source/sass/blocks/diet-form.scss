@@ -1,34 +1,13 @@
-.diet__form {
-  padding-right: 20px;
-}
-
 .diet-form__description {
   text-transform: uppercase;
   font-size: 14px;
   line-height: 18px;
-  padding: 0 20px;
 }
 
 .diet-form__fieldset {
-  position: relative;
-  margin: 0;
   border: none;
-  padding: 0 20px;
-  min-width: 280px;
-}
-
-.diet-form__fieldset--personal {
-  padding-top: 40px;
-  padding-bottom: 24px;
-}
-
-.diet-form__fieldset--type {
-  padding-top: 22px;
-  padding-bottom: 20px;
-}
-
-.diet-form__fieldset--additional {
-  padding-bottom: 34px;
+  padding: 20px 0;
+  margin: 0;
 }
 
 .diet-form__fieldset--personal,
@@ -36,20 +15,15 @@
   border-bottom: 1px solid $border-block;
 }
 
-.diet-form__fieldset--owner::before,
-.diet-form__fieldset--habits::before,
-.diet-form__fieldset--additional::before {
-  position: absolute;
+.diet-form__legend {
+  font-size: 24px;
+  line-height: 26px;
   width: 100%;
-  height: 2px;
-  background-color: $accent-main;
-  content: "";
-  top: 40px;
 }
 
 .diet-form__list {
   margin: 0;
-  padding: 0;
+  padding: 0 20px;
   list-style: none;
 }
 
@@ -61,20 +35,6 @@
 
 .diet-form__item:nth-last-child(1) {
   margin-bottom: 0;
-}
-
-.diet-form__legend {
-  max-width: 205px;
-  position: relative;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 24px;
-  line-height: 26px;
-  color: $basic-black;
-  padding-right: 15px;
-  padding-top: 24px;
-  padding-bottom: 35px;
-  background-color: $basic-white;
 }
 
 .diet-form__label {
@@ -135,27 +95,27 @@
   top: 0;
   left: 0;
   background-repeat: no-repeat;
-  background-image: url("../../img/icon_radio-off.svg");
+  background-image: url("../img/icon_radio-off.svg");
 }
 
 .diet-form__radio-input:hover + .diet-form__label--radio::before {
-  background-image: url("../../img/icon_radio-off_hover.svg");
+  background-image: url("../img/icon_radio-off_hover.svg");
 }
 
 .diet-form__radio-input:disabled + .diet-form__label--radio::before {
-  background-image: url("../../img/icon_radio-off_disabled.svg");
+  background-image: url("../img/icon_radio-off_disabled.svg");
 }
 
 .diet-form__radio-input:checked + .diet-form__label--radio::before {
-  background-image: url("../../img/icon_radio-on.svg");
+  background-image: url("../img/icon_radio-on.svg");
 }
 
 .diet-form__radio-input:checked:hover + .diet-form__label--radio::before {
-  background-image: url("../../img/icon_radio-on_hover.svg");
+  background-image: url("../img/icon_radio-on_hover.svg");
 }
 
 .diet-form__radio-input:checked:disabled + .diet-form__label--radio::before {
-  background-image: url("../../img/icon_radio-on_disabled.svg");
+  background-image: url("../img/icon_radio-on_disabled.svg");
 }
 
 .diet-form__fieldset--habits {
@@ -183,34 +143,39 @@
   top: 0;
   left: 0;
   background-repeat: no-repeat;
-  background-image: url("../../img/icon_check-off.svg");
+  background-image: url("../img/icon_check-off.svg");
 }
 
 .diet-form__checkbox-input:hover + .diet-form__label--checkbox::before {
-  background-image: url("../../img/icon_check-off_hover.svg");
+  background-image: url("../img/icon_check-off_hover.svg");
 }
 
 .diet-form__checkbox-input:disabled + .diet-form__label--checkbox::before {
-  background-image: url("../../img/icon_check-off_disabled.svg");
+  background-image: url("../img/icon_check-off_disabled.svg");
 }
 
 .diet-form__checkbox-input:checked + .diet-form__label--checkbox::before {
-  background-image: url("../../img/icon_check-on.svg");
+  background-image: url("../img/icon_check-on.svg");
 }
 
 .diet-form__checkbox-input:checked:hover + .diet-form__label--checkbox::before {
-  background-image: url("../../img/icon_check-on_hover.svg");
+  background-image: url("../img/icon_check-on_hover.svg");
 }
 
 .diet-form__checkbox-input:checked:disabled + .diet-form__label--checkbox::before {
-  background-image: url("../../img/icon_check-on_disabled.svg");
+  background-image: url("../img/icon_check-on_disabled.svg");
 }
 
 .diet-form__disclaimer {
-  font-family: Arial;
+  font-family: "Arial", sans-serif;
   font-style: normal;
   font-weight: normal;
   font-size: 14px;
   line-height: 16px;
   text-align: center;
+}
+
+.diet-form__wrapper {
+  min-width: 280px;
+  padding: 0 20px;
 }

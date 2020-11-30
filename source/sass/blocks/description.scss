@@ -31,9 +31,59 @@
 }
 
 .description__marker {
+  position: relative;
+  background: url("../img/description-marker.svg");
+  width: 60px;
+  height: 60px;
   flex-shrink: 0;
-  height: 100%;
-  width: auto;
+}
+
+.description__marker--leaf::after {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 25px;
+  height: 28px;
+  content: "";
+  background-image: url("../img/description-leaf.svg");
+  background-repeat: no-repeat;
+}
+
+.description__marker--glass::after {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 29px;
+  height: 31px;
+  content: "";
+  background-image: url("../img/description-glass.svg");
+  background-repeat: no-repeat;
+}
+
+.description__marker--cutlery::after {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 25px;
+  height: 30px;
+  content: "";
+  background-image: url("../img/description-cutlery.svg");
+  background-repeat: no-repeat;
+}
+
+.description__marker--clock::after {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 25px;
+  height: 30px;
+  content: "";
+  background-image: url("../img/description-clock.svg");
+  background-repeat: no-repeat;
 }
 
 .description__text {

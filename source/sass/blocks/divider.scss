@@ -1,0 +1,23 @@
+.divider {
+  position: relative;
+  display: inline-block;
+}
+
+.divider::before {
+  content: "";
+  position: absolute;
+  top: 14px;
+  left: 0;
+  right: 0;
+  height: 2px;
+  background-color: $accent-main;
+  z-index: -1;
+}
+
+.divider--effect {
+  display: inline-block;
+  padding-right: 15px;
+  padding-left: 20px;
+  max-width: 185px;
+  background-color: $basic-white;
+}
