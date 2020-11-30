@@ -8,16 +8,34 @@
   min-width: 280px;
 }
 
+.page-header__logo-mobile {
+  display: block;
+  width: 34px;
+  height: 38px;
+}
+
+.page-header__logo {
+  display: block;
+  width: 101px;
+  height: 18px;
+}
+
 .page-header__nav-toggle {
   border: none;
-  outline: none;
-  background: url("../../img/toggle_burger.svg") no-repeat;
-  width: 24px;
-  height: 16px;
+  background: none;
   box-sizing: content-box;
+  width: 24px;
 }
 
 .page-header__nav-toggle:hover,
 .page-header__nav-toggle:active {
   cursor: pointer;
+}
+
+.page-header__nav-icon {
+  display: none;
+}
+
+.page-header__nav-icon--active {
+  display: block;
 }
