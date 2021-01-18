@@ -11,45 +11,45 @@
 }
 
 .diet__item {
+  position: relative;
   background-color: $basic-background;
   margin-top: 20px;
   padding: 0 20px;
-}
-
-.diet__title-wrapper {
   display: flex;
-  justify-content: flex-start;
   align-items: center;
+  flex-wrap: wrap;
 }
 
 .diet__marker {
   position: relative;
-  background: url("../img/diet-marker.svg");
+  background: url("../../img/diet-marker.svg");
   width: 50px;
   height: 50px;
+  background-repeat: no-repeat;
+
+  &::after {
+    position: absolute;
+    content: "";
+    transform: translate(-50%, -50%);
+    background-repeat: no-repeat;
+  }
 }
 
 .diet__marker--slim::after {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+  background: url("../../img/diet-slim.svg");
   width: 36px;
   height: 50px;
-  content: "";
-  background-image: url("../img/diet-slim.svg");
+  top: 45%;
+  left: 50%;
   background-repeat: no-repeat;
 }
 
 .diet__marker--pro::after {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+  background: url("../../img/diet-pro.svg");
   width: 67px;
   height: 28px;
-  content: "";
-  background-image: url("../img/diet-pro.svg");
+  top: 50%;
+  left: 50%;
   background-repeat: no-repeat;
 }
 
@@ -57,11 +57,12 @@
   text-transform: uppercase;
   padding: 30px 0;
   margin: 0;
-  margin-left: 19px;
+  margin-left: 20px;
   font-style: normal;
   font-weight: normal;
   font-size: 24px;
   line-height: 37px;
+  max-width: 75%;
 }
 
 .diet__info {
@@ -74,24 +75,162 @@
   line-height: 18px;
   color: $text-light;
   border-bottom: 1px solid $border-block;
+  width: 100%;
 }
 
 .diet__link {
   position: relative;
-  display: inline-block;
+  display: block;
   text-decoration: none;
   text-transform: uppercase;
   color: $basic-black;
   font-size: 16px;
   line-height: 16px;
   padding: 19px 0;
+  width: 100%;
 }
 
-.diet__link::after {
-  position: absolute;
-  content: "";
-  right: -49px;
-  background: url("../img/icon_arrow.svg");
-  width: 32px;
-  height: 10px;
+@media (min-width: $tablet) {
+  .diet__wrapper {
+    padding: 0 30px;
+    margin: 0;
+  }
+
+  .diet__item {
+    padding: 0;
+    padding-top: 77px;
+    padding-bottom: 53px;
+    margin: 0;
+    margin-bottom: 30px;
+    flex-direction: column;
+    align-items: flex-start;
+
+    &:nth-last-child(1) {
+      margin-bottom: 0;
+    }
+  }
+
+  .diet__title {
+    padding: 0;
+    order: 1;
+    margin: 0;
+    padding-left: 53px;
+    padding-bottom: 24px;
+    font-size: 36px;
+    line-height: 36px;
+    width: 60%;
+  }
+
+  .diet__marker {
+    position: absolute;
+    right: 62px;
+    top: 50%;
+    transform: translateY(-50%);
+    order: 3;
+    width: 200px;
+    height: 200px;
+  }
+
+  .diet__marker--slim::after {
+    width: 140px;
+    height: 192px;
+  }
+
+  .diet__marker--pro::after {
+    width: 268px;
+    height: 112px;
+  }
+
+  .diet__info {
+    width: 50%;
+    padding: 0;
+    padding-left: 53px;
+    padding-bottom: 48px;
+    margin: 0;
+    order: 2;
+    border: none;
+    font-size: 16px;
+    line-height: 24px;
+  }
+
+  .diet__link {
+    padding: 0;
+    padding-left: 53px;
+    margin: 0;
+    order: 4;
+    width: 65%;
+    font-size: 20px;
+    line-height: 30px;
+  }
 }
+
+@media (min-width: $desktop) {
+  .diet__wrapper {
+    margin: 0;
+    padding: 0 110px;
+  }
+
+  .diet__list {
+    margin: 0;
+    padding: 0;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 80px;
+    width: auto;
+  }
+
+  .diet__item {
+    margin: 0;
+    padding: 0 52px;
+    padding-top: 41px;
+    padding-bottom: 55px;
+    flex-direction: row;
+  }
+
+  .diet__marker {
+    position: relative;
+    width: 100px;
+    height: 100px;
+    order: 1;
+    transform: none;
+    top: auto;
+    right: auto;
+  }
+
+  .diet__marker--slim::after {
+    width: 70px;
+    height: 97px;
+  }
+
+  .diet__marker--pro::after {
+    width: 134px;
+    height: 56px;
+  }
+
+  .diet__title {
+    padding: 0;
+    margin: 0;
+    margin-left: 62px;
+    order: 2;
+    width: auto;
+    align-self: center;
+  }
+
+  .diet__info {
+    padding: 0;
+    padding-top: 39px;
+    padding-bottom: 23px;
+    margin: 0;
+    order: 3;
+    width: 100%;
+  }
+
+  .diet__link {
+    position: relative;
+    padding: 0;
+    margin: 0;
+    order: 4;
+    width: auto;
+  }
+}
+

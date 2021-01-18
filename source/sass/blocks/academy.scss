@@ -1,0 +1,25 @@
+.academy {
+  border-top: 1px solid $border-block;
+  padding-top: 22px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.academy__link {
+  text-decoration: none;
+  color: $text-light;
+  font-family: "Arial", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 18px;
+}
+
+@media (min-width: $tablet) {
+  .academy {
+    padding: 0;
+    border: none;
+    width: 163px;
+  }
+}
