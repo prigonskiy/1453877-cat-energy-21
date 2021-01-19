@@ -1,0 +1,16 @@
+.social-list {
+  list-style: none;
+  padding: 20px 0;
+  display: flex;
+  justify-content: space-between;
+  margin: auto;
+  width: 130px;
+  text-align: center;
+  align-items: center;
+}
+
+@media (min-width: $tablet) {
+  .social-list {
+    padding: 0;
+  }
+}

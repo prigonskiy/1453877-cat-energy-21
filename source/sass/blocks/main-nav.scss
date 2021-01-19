@@ -9,3 +9,17 @@
 .main-nav__wrapper {
   min-width: 280px;
 }
+
+@media (min-width: $tablet) {
+  .main-nav__list {
+    display: flex;
+    align-items: center;
+  }
+}
+
+@media (min-width: $desktop) {
+  .main-nav__list {
+    display: flex;
+    align-items: center;
+  }
+}

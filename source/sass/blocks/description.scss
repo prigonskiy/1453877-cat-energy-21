@@ -36,54 +36,39 @@
   width: 60px;
   height: 60px;
   flex-shrink: 0;
+
+  &::after {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-repeat: no-repeat;
+    content: "";
+  }
 }
 
 .description__marker--leaf::after {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
   width: 25px;
   height: 28px;
-  content: "";
-  background-image: url("../img/description-leaf.svg");
-  background-repeat: no-repeat;
+  background-image: url("../../img/description-leaf.svg");
 }
 
 .description__marker--glass::after {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
   width: 29px;
   height: 31px;
-  content: "";
-  background-image: url("../img/description-glass.svg");
-  background-repeat: no-repeat;
+  background-image: url("../../img/description-glass.svg");
 }
 
 .description__marker--cutlery::after {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
   width: 25px;
   height: 30px;
-  content: "";
-  background-image: url("../img/description-cutlery.svg");
-  background-repeat: no-repeat;
+  background-image: url("../../img/description-cutlery.svg");
 }
 
 .description__marker--clock::after {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  width: 25px;
-  height: 30px;
-  content: "";
-  background-image: url("../img/description-clock.svg");
-  background-repeat: no-repeat;
+  width: 32px;
+  height: 33px;
+  background-image: url("../../img/description-clock.svg");
 }
 
 .description__text {
@@ -98,4 +83,117 @@
 
 .description__item:nth-last-child(1) {
   padding-bottom: 0;
+}
+
+@media (min-width: $tablet) {
+  .description {
+    margin: 0;
+    padding: 0 30px;
+    padding-top: 45px;
+    padding-bottom: 33px;
+  }
+
+  .description__wrapper {
+    padding: 0;
+    min-width: 280px;
+  }
+
+  .description__title {
+    font-size: 60px;
+    line-height: 60px;
+  }
+
+  .description__list {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-row-gap: 37px;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    counter-reset: li;
+  }
+
+  .description__item {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding-bottom: 0;
+    min-height: 240px;
+    padding-top: 40px;
+  }
+
+  .description__item::before {
+    content: counter(li);
+    counter-increment: li;
+    position: absolute;
+    font-family: "Oswald", "Arial", sans-serif;
+    font-size: 280px;
+    line-height: 280px;
+    top: 0;
+    left: 118px;
+    color: $basic-background;
+    z-index: -1;
+  }
+
+  .description__marker {
+    width: 80px;
+    height: 80px;
+    margin-bottom: 31px;
+  }
+
+  .description__marker--leaf::after {
+    width: 30px;
+    height: 32px;
+  }
+
+  .description__marker--glass::after {
+    width: 29px;
+    height: 31px;
+  }
+
+  .description__marker--cutlery::after {
+    width: 25px;
+    height: 30px;
+  }
+
+  .description__marker--clock::after {
+    width: 32px;
+    height: 33px;
+  }
+
+  .description__text {
+    padding: 0;
+    margin: 0;
+    color: $text-light;
+    font-family: "Arial", sans-serif;
+    font-size: 16px;
+    line-height: 24px;
+    width: 245px;
+  }
+
+  .description__item:nth-last-child(1) {
+    padding-bottom: 0;
+  }
+}
+
+@media (min-width: $desktop) {
+  .description {
+    margin: 0;
+    padding: 0 110px;
+    padding-top: 71px;
+    padding-bottom: 11px;
+  }
+
+  .description__title {
+    font-size: 60px;
+    line-height: 60px;
+    margin-bottom: 32px;
+  }
+
+  .description__list {
+    display: flex;
+    justify-content: space-between;
+    counter-reset: li;
+  }
 }

@@ -29,13 +29,11 @@
   background: none;
   min-width: 70px;
   padding: 10px 0;
-}
 
-.slider__control-button:hover,
-.slider__control-button:active,
-.slider__control-scroll:hover,
-.slider__control-scroll:active {
-  cursor: pointer;
+  &:hover,
+  &:active {
+    cursor: pointer;
+  }
 }
 
 .slider__control-scale {
@@ -55,4 +53,33 @@
   background-color: $accent-main;
   margin-top: 3px;
   margin-left: 5px;
+
+  &:hover,
+  &:active {
+    cursor: pointer;
+  }
+}
+
+@media (min-width: $tablet) {
+  .slider {
+    background-color: $basic-background-dark;
+  }
+
+  .slider__control-button {
+    font-size: 20px;
+    line-height: 30px;
+    width: auto;
+    padding: 0;
+  }
+
+  .slider__control-scale {
+    width: 428px;
+    height: 6px;
+    border: 6px solid $border-scale;
+    border-radius: 3px;
+  }
+
+  .slider__control-scroll {
+    display: none;
+  }
 }
