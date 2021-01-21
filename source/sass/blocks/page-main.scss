@@ -7,4 +7,17 @@
   padding-top: 27px;
   padding-bottom: 37px;
   color: $basic-black;
+
+  @media (min-width: $tablet) {
+    padding: 0;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-top: 141px;
+    font-size: 60px;
+    line-height: 60px;
+  }
+
+  @media (min-width: $desktop) {
+    padding-top: 188px;
+  }
 }

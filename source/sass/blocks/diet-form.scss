@@ -95,27 +95,27 @@
   top: 0;
   left: 0;
   background-repeat: no-repeat;
-  background-image: url("../img/icon_radio-off.svg");
+  background-image: url("img/icon_radio-off.svg");
 }
 
 .diet-form__radio-input:hover + .diet-form__label--radio::before {
-  background-image: url("../img/icon_radio-off_hover.svg");
+  background-image: url("img/icon_radio-off_hover.svg");
 }
 
 .diet-form__radio-input:disabled + .diet-form__label--radio::before {
-  background-image: url("../img/icon_radio-off_disabled.svg");
+  background-image: url("img/icon_radio-off_disabled.svg");
 }
 
 .diet-form__radio-input:checked + .diet-form__label--radio::before {
-  background-image: url("../img/icon_radio-on.svg");
+  background-image: url("img/icon_radio-on.svg");
 }
 
 .diet-form__radio-input:checked:hover + .diet-form__label--radio::before {
-  background-image: url("../img/icon_radio-on_hover.svg");
+  background-image: url("img/icon_radio-on_hover.svg");
 }
 
 .diet-form__radio-input:checked:disabled + .diet-form__label--radio::before {
-  background-image: url("../img/icon_radio-on_disabled.svg");
+  background-image: url("img/icon_radio-on_disabled.svg");
 }
 
 .diet-form__fieldset--habits {
@@ -143,27 +143,27 @@
   top: 0;
   left: 0;
   background-repeat: no-repeat;
-  background-image: url("../img/icon_check-off.svg");
+  background-image: url("img/icon_check-off.svg");
 }
 
 .diet-form__checkbox-input:hover + .diet-form__label--checkbox::before {
-  background-image: url("../img/icon_check-off_hover.svg");
+  background-image: url("img/icon_check-off_hover.svg");
 }
 
 .diet-form__checkbox-input:disabled + .diet-form__label--checkbox::before {
-  background-image: url("../img/icon_check-off_disabled.svg");
+  background-image: url("img/icon_check-off_disabled.svg");
 }
 
 .diet-form__checkbox-input:checked + .diet-form__label--checkbox::before {
-  background-image: url("../img/icon_check-on.svg");
+  background-image: url("img/icon_check-on.svg");
 }
 
 .diet-form__checkbox-input:checked:hover + .diet-form__label--checkbox::before {
-  background-image: url("../img/icon_check-on_hover.svg");
+  background-image: url("img/icon_check-on_hover.svg");
 }
 
 .diet-form__checkbox-input:checked:disabled + .diet-form__label--checkbox::before {
-  background-image: url("../img/icon_check-on_disabled.svg");
+  background-image: url("img/icon_check-on_disabled.svg");
 }
 
 .diet-form__disclaimer {

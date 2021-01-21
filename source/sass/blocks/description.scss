@@ -1,11 +1,30 @@
 .description {
   padding-top: 27px;
   padding-bottom: 42px;
+
+  @media (min-width: $tablet) {
+    margin: 0;
+    padding: 0 30px;
+    padding-top: 45px;
+    padding-bottom: 33px;
+  }
+
+  @media (min-width: $desktop) {
+    margin: 0;
+    padding: 0 110px;
+    padding-top: 71px;
+    padding-bottom: 11px;
+  }
 }
 
 .description__wrapper {
   padding: 0 20px;
   min-width: 280px;
+
+  @media (min-width: $tablet) {
+    padding: 0;
+    min-width: 280px;
+  }
 }
 
 .description__title {
@@ -15,6 +34,17 @@
   font-weight: normal;
   margin: 0;
   padding: 0;
+
+  @media (min-width: $tablet) {
+    font-size: 60px;
+    line-height: 60px;
+  }
+
+  @media (min-width: $desktop) {
+    font-size: 60px;
+    line-height: 60px;
+    margin-bottom: 32px;
+  }
 }
 
 .description__list {
@@ -22,12 +52,46 @@
   padding: 0;
   padding-top: 38px;
   margin: 0;
+
+  @media (min-width: $tablet) {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-row-gap: 37px;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    counter-reset: li;
+  }
+
+  @media (min-width: $desktop) {
+    display: flex;
+    justify-content: space-between;
+    counter-reset: li;
+  }
 }
 
 .description__item {
   display: flex;
   align-items: center;
   padding-bottom: 20px;
+
+  &:nth-last-child(1) {
+    padding-bottom: 0;
+  }
+
+  @media (min-width: $tablet) {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding-bottom: 0;
+    min-height: 240px;
+    padding-top: 40px;
+
+    &:nth-last-child(1) {
+      padding-bottom: 0;
+    }
+  }
 }
 
 .description__marker {
@@ -37,6 +101,21 @@
   height: 60px;
   flex-shrink: 0;
 
+  &::before {
+    @media (min-width: $tablet) {
+      content: counter(li);
+      counter-increment: li;
+      position: absolute;
+      font-family: "Oswald", "Arial", sans-serif;
+      font-size: 280px;
+      line-height: 280px;
+      top: 0;
+      left: 118px;
+      color: $basic-background;
+      z-index: -1;
+    }
+  }
+
   &::after {
     position: absolute;
     top: 50%;
@@ -45,30 +124,56 @@
     background-repeat: no-repeat;
     content: "";
   }
+
+  @media (min-width: $tablet) {
+    width: 80px;
+    height: 80px;
+    margin-bottom: 31px;
+  }
 }
 
 .description__marker--leaf::after {
   width: 25px;
   height: 28px;
-  background-image: url("../../img/description-leaf.svg");
+  background-image: url("../img/description-leaf.svg");
+
+  @media (min-width: $tablet) {
+    width: 30px;
+    height: 32px;
+  }
 }
 
 .description__marker--glass::after {
   width: 29px;
   height: 31px;
-  background-image: url("../../img/description-glass.svg");
+  background-image: url("../img/description-glass.svg");
+
+  @media (min-width: $tablet) {
+    width: 29px;
+    height: 31px;
+  }
 }
 
 .description__marker--cutlery::after {
   width: 25px;
   height: 30px;
-  background-image: url("../../img/description-cutlery.svg");
+  background-image: url("../img/description-cutlery.svg");
+
+  @media (min-width: $tablet) {
+    width: 25px;
+    height: 30px;
+  }
 }
 
 .description__marker--clock::after {
   width: 32px;
   height: 33px;
-  background-image: url("../../img/description-clock.svg");
+  background-image: url("../img/description-clock.svg");
+
+  @media (min-width: $tablet) {
+    width: 32px;
+    height: 33px;
+  }
 }
 
 .description__text {
@@ -79,90 +184,8 @@
   font-family: "Arial", sans-serif;
   font-size: 14px;
   line-height: 18px;
-}
 
-.description__item:nth-last-child(1) {
-  padding-bottom: 0;
-}
-
-@media (min-width: $tablet) {
-  .description {
-    margin: 0;
-    padding: 0 30px;
-    padding-top: 45px;
-    padding-bottom: 33px;
-  }
-
-  .description__wrapper {
-    padding: 0;
-    min-width: 280px;
-  }
-
-  .description__title {
-    font-size: 60px;
-    line-height: 60px;
-  }
-
-  .description__list {
-    display: grid;
-    grid-template-columns: 50% 50%;
-    grid-row-gap: 37px;
-    list-style: none;
-    padding: 0;
-    margin: 0;
-    counter-reset: li;
-  }
-
-  .description__item {
-    position: relative;
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    padding-bottom: 0;
-    min-height: 240px;
-    padding-top: 40px;
-  }
-
-  .description__item::before {
-    content: counter(li);
-    counter-increment: li;
-    position: absolute;
-    font-family: "Oswald", "Arial", sans-serif;
-    font-size: 280px;
-    line-height: 280px;
-    top: 0;
-    left: 118px;
-    color: $basic-background;
-    z-index: -1;
-  }
-
-  .description__marker {
-    width: 80px;
-    height: 80px;
-    margin-bottom: 31px;
-  }
-
-  .description__marker--leaf::after {
-    width: 30px;
-    height: 32px;
-  }
-
-  .description__marker--glass::after {
-    width: 29px;
-    height: 31px;
-  }
-
-  .description__marker--cutlery::after {
-    width: 25px;
-    height: 30px;
-  }
-
-  .description__marker--clock::after {
-    width: 32px;
-    height: 33px;
-  }
-
-  .description__text {
+  @media (min-width: $tablet) {
     padding: 0;
     margin: 0;
     color: $text-light;
@@ -170,30 +193,5 @@
     font-size: 16px;
     line-height: 24px;
     width: 245px;
-  }
-
-  .description__item:nth-last-child(1) {
-    padding-bottom: 0;
-  }
-}
-
-@media (min-width: $desktop) {
-  .description {
-    margin: 0;
-    padding: 0 110px;
-    padding-top: 71px;
-    padding-bottom: 11px;
-  }
-
-  .description__title {
-    font-size: 60px;
-    line-height: 60px;
-    margin-bottom: 32px;
-  }
-
-  .description__list {
-    display: flex;
-    justify-content: space-between;
-    counter-reset: li;
   }
 }

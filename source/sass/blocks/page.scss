@@ -11,10 +11,8 @@
   display: grid;
   grid-template-rows: min-content 1fr min-content;
   min-width: 320px;
-}
 
-@media (min-width: $desktop) {
-  .page__body {
+  @media (min-width: $desktop) {
     position: relative;
   }
 }

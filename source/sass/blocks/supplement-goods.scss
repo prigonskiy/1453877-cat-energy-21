@@ -1,35 +1,118 @@
 .supplement-goods {
   margin: 0;
+  margin-top: 25px;
   min-width: 280px;
+
+  @media (min-width: $tablet) {
+    margin-top: 68px;
+  }
+}
+
+.supplement-goods__list-promo-wrapper {
+  @media (min-width: $desktop) {
+    margin: 0;
+    padding: 0;
+    padding-left: 110px;
+    padding-right: 110px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 81px;
+    margin-bottom: 86px;
+  }
 }
 
 .supplement-goods__header {
+  display: inline-block;
   font-style: normal;
   font-weight: normal;
   font-size: 24px;
   line-height: 24px;
   background-color: $basic-white;
   padding: 0 20px;
+  margin: 0;
+
+  @media (min-width: $tablet) {
+    font-size: 36px;
+    line-height: 36px;
+    padding: 0 37px;
+    margin-left: 30px;
+  }
 }
 
 .supplement-goods__list {
   margin: 0;
-  padding: 25px 20px;
+  padding-top: 36px;
+  padding-bottom: 0;
+  padding-left: 20px;
+  padding-right: 20px;
   list-style: none;
+
+  @media (min-width: $tablet) {
+    border: 1px solid $border-list;
+    padding: 0;
+    margin-top: 80px;
+    margin-left: 30px;
+    margin-right: 30px;
+  }
+
+  @media (min-width: $desktop) {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    margin-right: 79px;
+    border: none;
+  }
 }
 
 .supplement-goods__item {
+  position: relative;
   min-height: 130px;
   border-top: 1px solid $border-list;
-}
 
-.supplement-goods__item:nth-last-child(1) {
-  border-bottom: 1px solid $border-list;
+  &:nth-last-child(1) {
+    border-bottom: 1px solid $border-list;
+  }
+
+  @media (min-width: $tablet) {
+    border-top: none;
+    border-bottom: 1px solid $border-list;
+    min-height: auto;
+
+    &:nth-last-child(1) {
+      border-bottom: none;
+    }
+  }
+
+  @media (min-width: $desktop) {
+    border: none;
+    border-top: 1px solid $border-list;
+
+    &:nth-last-child(1) {
+      border-bottom: 1px solid $border-list;
+    }
+  }
 }
 
 .supplement-goods__card {
   padding-top: 13px;
   padding-bottom: 19px;
+
+  @media (min-width: $tablet) {
+    display: flex;
+    padding-top: 26px;
+    padding-bottom: 94px;
+    padding-left: 38px;
+    padding-right: 38px;
+  }
+
+  @media (min-width: $desktop) {
+    align-items: center;
+    justify-content: space-between;
+    padding: 0;
+    padding-top: 15px;
+    padding-bottom: 17px;
+  }
 }
 
 .supplement-goods__name {
@@ -42,6 +125,17 @@
   font-weight: normal;
   font-size: 16px;
   line-height: 16px;
+
+  @media (min-width: $tablet) {
+    width: 50%;
+    font-size: 20px;
+    line-height: 20px;
+    padding-bottom: 0;
+  }
+
+  @media (min-width: $desktop) {
+    width: 35%;
+  }
 }
 
 .supplement-goods__table {
@@ -55,6 +149,18 @@
   border: none;
   width: 100%;
   padding-bottom: 15px;
+
+  @media (min-width: $tablet) {
+    width: 50%;
+    font-size: 16px;
+    line-height: 20px;
+    padding-bottom: 0;
+  }
+
+  @media (min-width: $desktop) {
+    width: 35%;
+    margin-right: 38px;
+  }
 }
 
 .supplement-goods__line {
@@ -71,6 +177,16 @@
 
 .supplement-goods__row--spec {
   text-align: left;
+
+  @media (min-width: $tablet) {
+    text-align: right;
+    width: 70%;
+  }
+
+  @media (min-width: $desktop) {
+    text-align: left;
+    width: 70%;
+  }
 }
 
 .supplement-goods__row--value {
@@ -79,7 +195,24 @@
 
 .supplement-goods__promo {
   padding: 0 20px;
+  margin-top: 39px;
+  margin-bottom: 35px;
   height: 289px;
+
+  @media (min-width: $tablet) {
+    margin: 0;
+    padding: 0;
+    margin-right: 30px;
+    margin-left: 30px;
+    margin-top: 69px;
+    margin-bottom: 76px;
+    height: auto;
+  }
+
+  @media (min-width: $desktop) {
+    margin: 0;
+    padding: 0;
+  }
 }
 
 .supplement-goods__background {
@@ -91,15 +224,39 @@
   margin-right: auto;
   height: 289px;
   width: 280px;
-  background: url("../img/supplement-goods__promo.png");
+  background: url("../img/supplement-goods__promo_mobile.png");
   background-repeat: no-repeat;
+
+  @media (min-width: $tablet) {
+    flex-direction: row;
+    justify-content: space-around;
+    background: $accent-main url("../img/supplement-goods__promo_tablet.png");
+    width: 708px;
+    height: 200px;
+    background-repeat: no-repeat;
+  }
+
+  @media (min-width: $desktop) {
+    flex-direction: column;
+    justify-content: space-evenly;
+    background: $accent-main url("../img/supplement-goods__promo_desktop.png");
+    background-repeat: no-repeat;
+    width: 245px;
+    height: 289px;
+  }
 }
 
 .supplement-goods__icon {
   display: block;
   background-image: url("../img/description-gift.svg");
+  background-size: 100% 100%;
   width: 78px;
   height: 80px;
+
+  @media (min-width: $tablet) {
+    width: 80px;
+    height: 83px;
+  }
 }
 
 .supplement-goods__description {
@@ -112,4 +269,12 @@
   text-align: center;
   width: 161px;
   min-height: 60px;
+
+  @media (min-width: $tablet) {
+    text-align: left;
+  }
+
+  @media (min-width: $desktop) {
+    text-align: center;
+  }
 }

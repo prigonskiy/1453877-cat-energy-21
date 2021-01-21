@@ -1,17 +1,23 @@
 .divider {
   position: relative;
-  display: inline-block;
+  display: block;
+  width: 100%;
 }
 
 .divider::before {
   content: "";
   position: absolute;
-  top: 14px;
+  top: 15px;
   left: 0;
   right: 0;
   height: 2px;
   background-color: $accent-main;
   z-index: -1;
+  width: 100%;
+
+  @media (min-width: $tablet) {
+    top: 22px;
+  }
 }
 
 .divider--effect {

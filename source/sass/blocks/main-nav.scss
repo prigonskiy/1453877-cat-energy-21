@@ -1,24 +1,22 @@
 .main-nav {
   display: none;
-}
 
-.main-nav--active {
-  display: block;
+  &--active {
+    display: block;
+  }
 }
 
 .main-nav__wrapper {
   min-width: 280px;
 }
 
-@media (min-width: $tablet) {
-  .main-nav__list {
+.main-nav__list {
+  @media (min-width: $tablet) {
     display: flex;
     align-items: center;
   }
-}
 
-@media (min-width: $desktop) {
-  .main-nav__list {
+  @media (min-width: $desktop) {
     display: flex;
     align-items: center;
   }
