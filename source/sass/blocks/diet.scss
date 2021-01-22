@@ -2,12 +2,31 @@
   min-width: 280px;
   padding: 0 20px;
   margin-top: 22px;
+
+  @media (min-width: $tablet) {
+    padding: 0 30px;
+    margin: 0;
+  }
+
+  @media (min-width: $desktop) {
+    margin: 0;
+    padding: 0 110px;
+  }
 }
 
 .diet__list {
   list-style: none;
   padding: 0;
   margin: 0;
+
+  @media (min-width: $desktop) {
+    margin: 0;
+    padding: 0;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 80px;
+    width: auto;
+  }
 }
 
 .diet__item {
@@ -18,85 +37,8 @@
   display: flex;
   align-items: center;
   flex-wrap: wrap;
-}
 
-.diet__marker {
-  position: relative;
-  background: url("../../img/diet-marker.svg");
-  width: 50px;
-  height: 50px;
-  background-repeat: no-repeat;
-
-  &::after {
-    position: absolute;
-    content: "";
-    transform: translate(-50%, -50%);
-    background-repeat: no-repeat;
-  }
-}
-
-.diet__marker--slim::after {
-  background: url("../../img/diet-slim.svg");
-  width: 36px;
-  height: 50px;
-  top: 45%;
-  left: 50%;
-  background-repeat: no-repeat;
-}
-
-.diet__marker--pro::after {
-  background: url("../../img/diet-pro.svg");
-  width: 67px;
-  height: 28px;
-  top: 50%;
-  left: 50%;
-  background-repeat: no-repeat;
-}
-
-.diet__title {
-  text-transform: uppercase;
-  padding: 30px 0;
-  margin: 0;
-  margin-left: 20px;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 24px;
-  line-height: 37px;
-  max-width: 75%;
-}
-
-.diet__info {
-  padding-bottom: 23px;
-  margin: 0;
-  font-family: "Arial", sans-serif;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 14px;
-  line-height: 18px;
-  color: $text-light;
-  border-bottom: 1px solid $border-block;
-  width: 100%;
-}
-
-.diet__link {
-  position: relative;
-  display: block;
-  text-decoration: none;
-  text-transform: uppercase;
-  color: $basic-black;
-  font-size: 16px;
-  line-height: 16px;
-  padding: 19px 0;
-  width: 100%;
-}
-
-@media (min-width: $tablet) {
-  .diet__wrapper {
-    padding: 0 30px;
-    margin: 0;
-  }
-
-  .diet__item {
+  @media (min-width: $tablet) {
     padding: 0;
     padding-top: 77px;
     padding-bottom: 53px;
@@ -110,7 +52,100 @@
     }
   }
 
-  .diet__title {
+  @media (min-width: $desktop) {
+    margin: 0;
+    padding: 0 52px;
+    padding-top: 41px;
+    padding-bottom: 55px;
+    flex-direction: row;
+  }
+}
+
+.diet__marker {
+  position: relative;
+  background: url("../img/diet-marker.svg");
+  width: 50px;
+  height: 50px;
+  background-repeat: no-repeat;
+
+  &::after {
+    position: absolute;
+    content: "";
+    transform: translate(-50%, -50%);
+    background-repeat: no-repeat;
+  }
+
+  @media (min-width: $tablet) {
+    position: absolute;
+    right: 62px;
+    top: 50%;
+    transform: translateY(-50%);
+    order: 3;
+    width: 200px;
+    height: 200px;
+  }
+
+  @media (min-width: $desktop) {
+    position: relative;
+    width: 100px;
+    height: 100px;
+    order: 1;
+    transform: none;
+    top: auto;
+    right: auto;
+  }
+}
+
+.diet__marker--slim::after {
+  background: url("../img/diet-slim.svg");
+  width: 36px;
+  height: 50px;
+  top: 45%;
+  left: 50%;
+  background-repeat: no-repeat;
+
+  @media (min-width: $tablet) {
+    width: 140px;
+    height: 192px;
+  }
+
+  @media (min-width: $desktop) {
+    width: 70px;
+    height: 97px;
+  }
+}
+
+.diet__marker--pro::after {
+  background: url("../img/diet-pro.svg");
+  width: 67px;
+  height: 28px;
+  top: 50%;
+  left: 50%;
+  background-repeat: no-repeat;
+
+  @media (min-width: $tablet) {
+    width: 268px;
+    height: 112px;
+  }
+
+  @media (min-width: $desktop) {
+    width: 134px;
+    height: 56px;
+  }
+}
+
+.diet__title {
+  text-transform: uppercase;
+  padding: 30px 0;
+  margin: 0;
+  margin-left: 20px;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 24px;
+  line-height: 37px;
+  max-width: 75%;
+
+  @media (min-width: $tablet) {
     padding: 0;
     order: 1;
     margin: 0;
@@ -121,27 +156,29 @@
     width: 60%;
   }
 
-  .diet__marker {
-    position: absolute;
-    right: 62px;
-    top: 50%;
-    transform: translateY(-50%);
-    order: 3;
-    width: 200px;
-    height: 200px;
+  @media (min-width: $desktop) {
+    padding: 0;
+    margin: 0;
+    margin-left: 62px;
+    order: 2;
+    width: auto;
+    align-self: center;
   }
+}
 
-  .diet__marker--slim::after {
-    width: 140px;
-    height: 192px;
-  }
+.diet__info {
+  padding-bottom: 23px;
+  margin: 0;
+  font-family: "Arial", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 18px;
+  color: $text-light;
+  border-bottom: 1px solid $border-block;
+  width: 100%;
 
-  .diet__marker--pro::after {
-    width: 268px;
-    height: 112px;
-  }
-
-  .diet__info {
+  @media (min-width: $tablet) {
     width: 50%;
     padding: 0;
     padding-left: 53px;
@@ -153,7 +190,28 @@
     line-height: 24px;
   }
 
-  .diet__link {
+  @media (min-width: $desktop) {
+    padding: 0;
+    padding-top: 39px;
+    padding-bottom: 23px;
+    margin: 0;
+    order: 3;
+    width: 100%;
+  }
+}
+
+.diet__link {
+  position: relative;
+  display: block;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: $basic-black;
+  font-size: 16px;
+  line-height: 16px;
+  padding: 19px 0;
+  width: 100%;
+
+  @media (min-width: $tablet) {
     padding: 0;
     padding-left: 53px;
     margin: 0;
@@ -162,70 +220,8 @@
     font-size: 20px;
     line-height: 30px;
   }
-}
 
-@media (min-width: $desktop) {
-  .diet__wrapper {
-    margin: 0;
-    padding: 0 110px;
-  }
-
-  .diet__list {
-    margin: 0;
-    padding: 0;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    column-gap: 80px;
-    width: auto;
-  }
-
-  .diet__item {
-    margin: 0;
-    padding: 0 52px;
-    padding-top: 41px;
-    padding-bottom: 55px;
-    flex-direction: row;
-  }
-
-  .diet__marker {
-    position: relative;
-    width: 100px;
-    height: 100px;
-    order: 1;
-    transform: none;
-    top: auto;
-    right: auto;
-  }
-
-  .diet__marker--slim::after {
-    width: 70px;
-    height: 97px;
-  }
-
-  .diet__marker--pro::after {
-    width: 134px;
-    height: 56px;
-  }
-
-  .diet__title {
-    padding: 0;
-    margin: 0;
-    margin-left: 62px;
-    order: 2;
-    width: auto;
-    align-self: center;
-  }
-
-  .diet__info {
-    padding: 0;
-    padding-top: 39px;
-    padding-bottom: 23px;
-    margin: 0;
-    order: 3;
-    width: 100%;
-  }
-
-  .diet__link {
+  @media (min-width: $desktop) {
     position: relative;
     padding: 0;
     margin: 0;

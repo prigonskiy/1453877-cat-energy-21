@@ -3,6 +3,17 @@
   margin: 0;
   background-color: $basic-background;
   min-width: 280px;
+
+  @media (min-width: $tablet) {
+    display: flex;
+    padding: 58px 30px;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  @media (min-width: $desktop) {
+    padding: 58px 110px;
+  }
 }
 
 .social-copyright__logo {
@@ -11,24 +22,9 @@
   padding-bottom: 32px;
   text-align: center;
   border-bottom: 1px solid $border-block;
-}
 
-@media (min-width: $tablet) {
-  .social-copyright {
-    display: flex;
-    padding: 58px 30px;
-    align-items: center;
-    justify-content: space-between;
-  }
-
-  .social-copyright__logo {
+  @media (min-width: $tablet) {
     padding: 0;
     border: none;
-  }
-}
-
-@media (min-width: $desktop) {
-  .social-copyright {
-    padding: 58px 110px;
   }
 }

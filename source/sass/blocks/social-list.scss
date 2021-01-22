@@ -7,10 +7,8 @@
   width: 130px;
   text-align: center;
   align-items: center;
-}
 
-@media (min-width: $tablet) {
-  .social-list {
+  @media (min-width: $tablet) {
     padding: 0;
   }
 }

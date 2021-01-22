@@ -4,12 +4,35 @@
   background-size: 563px 302px;
   background-position: center top;
   padding-top: 27px;
+
+  @media (min-width: $tablet) {
+    background: none;
+    padding: 0;
+    margin: 0;
+    margin-top: 140px;
+  }
+
+  @media (min-width: $desktop) {
+    background-image: url("../img/promo-background-desktop.jpg");
+    background-repeat: no-repeat;
+    background-size: 1044px 696px;
+    background-position: calc(50% + 522px) 0;
+    margin-top: 0;
+  }
 }
 
 .nutrition__wrapper {
   padding: 0 20px;
   min-width: 280px;
   text-align: center;
+
+  @media (min-width: $tablet) {
+    padding: 0;
+    text-align: start;
+    padding-left: 115px;
+    position: relative;
+    min-height: 810px;
+  }
 }
 
 .nutrition__header {
@@ -22,6 +45,19 @@
   margin: 0;
   padding: 0;
   padding-bottom: 25px;
+
+  @media (min-width: $tablet) {
+    font-size: 60px;
+    line-height: 60px;
+    color: $basic-black;
+    margin: 0;
+    padding: 0;
+    padding-bottom: 41px;
+  }
+
+  @media (min-width: $desktop) {
+    padding-top: 223px;
+  }
 }
 
 .nutrition__text {
@@ -33,40 +69,8 @@
   padding: 0;
   padding-bottom: 29px;
   text-transform: uppercase;
-}
 
-.nutrition__image {
-  height: 270px;
-  margin: 0;
-  padding: 0;
-  overflow: hidden;
-}
-
-@media (min-width: $tablet) {
-  .nutrition {
-    background: none;
-    padding: 0;
-    margin: 0;
-  }
-
-  .nutrition__wrapper {
-    padding: 0;
-    text-align: start;
-    padding-left: 115px;
-    position: relative;
-    min-height: 810px;
-  }
-
-  .nutrition__header {
-    font-size: 60px;
-    line-height: 60px;
-    color: $basic-black;
-    margin: 0;
-    padding: 0;
-    padding-bottom: 41px;
-  }
-
-  .nutrition__text {
+  @media (min-width: $tablet) {
     font-size: 20px;
     line-height: 20px;
     color: $basic-black;
@@ -75,8 +79,15 @@
     padding-bottom: 49px;
     text-transform: uppercase;
   }
+}
 
-  .nutrition__image {
+.nutrition__image {
+  height: 270px;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+
+  @media (min-width: $tablet) {
     position: absolute;
     z-index: -1;
     bottom: 0;
@@ -86,21 +97,8 @@
     height: auto;
     width: 709px;
   }
-}
 
-@media (min-width: $desktop) {
-  .nutrition {
-    background-image: url("../img/promo-background-desktop.jpg");
-    background-repeat: no-repeat;
-    background-size: 1044px 696px;
-    background-position: calc(50% + 522px) 0;
-  }
-
-  .nutrition__header {
-    padding-top: 223px;
-  }
-
-  .nutrition__image {
+  @media (min-width: $desktop) {
     position: absolute;
     z-index: 1;
     margin: 0;
