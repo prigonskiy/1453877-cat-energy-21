@@ -21,3 +21,13 @@
     padding-top: 188px;
   }
 }
+
+.page-main__header--diet-form {
+  @media (min-width: $tablet) {
+    padding-left: 69px;
+  }
+
+  @media (min-width: $desktop) {
+    padding-left: 110px;
+  }
+}
