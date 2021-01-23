@@ -14,6 +14,10 @@
   align-items: center;
   background-color: $basic-background;
 
+  &--main {
+    background-color: $basic-white;
+  }
+
   @media (min-width: $tablet) {
     padding: 0 71px;
     min-height: 201px;
@@ -83,9 +87,32 @@
 .contacts__map {
   min-width: 280px;
   height: 362px;
+  background-image: url("../img/map_mobile.png");
+  background-repeat: no-repeat;
+  background-size: 320px 362px;
+  background-position: center top;
+
+  @media (min-resolution: 2dppx) {
+    background-image: url("../img/map_mobile@2x.png");
+  }
 
   @media (min-width: $tablet) {
     height: 400px;
+    background-image: url("../img/map_tablet.png");
+    background-size: 768px 400px;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/map_tablet@2x.png");
+    }
+  }
+
+  @media (min-width: $desktop) {
+    background-image: url("../img/map_desktop.png");
+    background-size: 1440px 400px;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/map_desktop@2x.png");
+    }
   }
 }
 

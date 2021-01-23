@@ -1,6 +1,7 @@
 .social-copyright {
   padding: 22px 20px;
   margin: 0;
+  padding-top: 5px;
   background-color: $basic-background;
   min-width: 280px;
 
@@ -18,13 +19,21 @@
 
 .social-copyright__logo {
   display: block;
-  padding-top: 17px;
+  padding-top: 39px;
   padding-bottom: 32px;
-  text-align: center;
+  width: 100%;
+  background-image: url("../img/logo-name.svg");
+  background-repeat: no-repeat;
+  background-size: 128px 24px;
+  background-position: center center;
+  margin: 0 auto;
   border-bottom: 1px solid $border-block;
 
   @media (min-width: $tablet) {
     padding: 0;
     border: none;
+    width: 128px;
+    margin: 0;
+    height: 24px;
   }
 }

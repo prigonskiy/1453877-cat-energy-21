@@ -306,15 +306,11 @@
   }
 }
 
-.diet-form__label + .diet-form__text-input--mail::after {
-  position: absolute;
-  content: "";
-  width: 20px;
-  height: 14px;
-  right: 15px;
-  top: 16px;
+.diet-form__text-input--mail {
   background-repeat: no-repeat;
   background-image: url("../img/diet-form_icon_mail.svg");
+  background-position: 95%;
+  background-size: 20px 14px;
 }
 
 .diet-form__textarea {

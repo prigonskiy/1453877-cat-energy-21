@@ -32,11 +32,15 @@
 .diet__item {
   position: relative;
   background-color: $basic-background;
-  margin-top: 20px;
+  margin-bottom: 20px;
   padding: 0 20px;
   display: flex;
   align-items: center;
   flex-wrap: wrap;
+
+  &:nth-last-child(1) {
+    margin-bottom: 0;
+  }
 
   @media (min-width: $tablet) {
     padding: 0;
@@ -202,23 +206,24 @@
 
 .diet__link {
   position: relative;
-  display: block;
+  display: inline-block;
   text-decoration: none;
   text-transform: uppercase;
   color: $basic-black;
   font-size: 16px;
   line-height: 16px;
   padding: 19px 0;
-  width: 100%;
+  padding-right: 49px;
 
   @media (min-width: $tablet) {
     padding: 0;
     padding-left: 53px;
     margin: 0;
     order: 4;
-    width: 65%;
     font-size: 20px;
     line-height: 30px;
+    width: auto;
+    padding-right: 58px;
   }
 
   @media (min-width: $desktop) {
@@ -226,6 +231,21 @@
     padding: 0;
     margin: 0;
     order: 4;
-    width: auto;
+    padding-right: 58px;
+  }
+}
+
+.diet__link::after {
+  position: absolute;
+  content: "";
+  right: 0;
+  top: 21px;
+  background-image: url("../img/icon_arrow.svg");
+  background-repeat: no-repeat;
+  width: 32px;
+  height: 10px;
+
+  @media (min-width: $tablet) {
+    top: 10px;
   }
 }
