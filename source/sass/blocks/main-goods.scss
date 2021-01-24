@@ -33,7 +33,7 @@
 
 .main-goods__item {
   padding: 0;
-  padding-top: 8px;
+  padding-top: 10px;
   padding-bottom: 11px;
   margin: 0;
   border-top: 1px solid $basic-background-hover;
@@ -58,7 +58,7 @@
 
 .main-goods__card {
   padding: 0 20px;
-  padding-bottom: 67px;
+  padding-bottom: 59px;
   position: relative;
 
   @media (min-width: $tablet) {
@@ -127,7 +127,7 @@
 .main-goods__table {
   margin: 0;
   padding: 0;
-  margin-top: 18px;
+  margin-top: 13px;
   font-family: "Arial", sans-serif;
   font-weight: normal;
   font-style: normal;

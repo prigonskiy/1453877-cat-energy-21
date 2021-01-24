@@ -15,7 +15,7 @@
 }
 
 .example__wrapper {
-  padding-top: 27px;
+  padding-top: 28px;
   padding-bottom: 25px;
   padding-left: 20px;
   padding-right: 20px;
@@ -29,7 +29,11 @@
 
   @media (min-width: $desktop) {
     padding-left: 110px;
-    padding-right: 70px;
+    padding-right: 0;
+    padding-top: 0;
+    padding-bottom: 0;
+    display: flex;
+    justify-content: flex-start;
   }
 }
 
@@ -47,6 +51,11 @@
     font-size: 60px;
     line-height: 60px;
     padding-bottom: 63px;
+  }
+
+  @media (min-width: $desktop) {
+    padding-bottom: 146px;
+    padding-top: 58px;
   }
 }
 
@@ -66,6 +75,11 @@
     line-height: 24px;
     padding-bottom: 54px;
   }
+
+  @media (min-width: $desktop) {
+    width: 440px;
+    padding-bottom: 69px;
+  }
 }
 
 .example__stats {
@@ -73,6 +87,10 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
+  }
+
+  @media (min-width: $desktop) {
+    display: block;
   }
 }
 
@@ -86,9 +104,16 @@
 
   @media (min-width: $tablet) {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     width: 366px;
     align-items: center;
+  }
+
+  @media (min-width: $desktop) {
+    grid-gap: 42px;
+    width: auto;
+    justify-content: flex-start;
+    padding-bottom: 57px;
   }
 }
 
@@ -145,6 +170,10 @@
     bottom: -7px;
     transform: translate(-50%, 0);
   }
+
+  @media (min-width: $desktop) {
+    background-color: $basic-background-dark;
+  }
 }
 
 .example__caption {
@@ -162,11 +191,24 @@
     text-align: right;
     width: 180px;
   }
+
+  @media (min-width: $desktop) {
+    display: flex;
+    justify-content: space-between;
+    width: 328px;
+    text-align: center;
+  }
 }
 
 .example__progress {
   @media (min-width: $tablet) {
     height: 620px;
+  }
+
+  @media (min-width: $desktop) {
+    height: 656px;
+    width: 690px;
+    margin-left: 115px;
   }
 }
 
@@ -257,6 +299,11 @@
   @media (min-width: $tablet) {
     width: 590px;
   }
+
+  @media (min-width: $desktop) {
+    width: 584px;
+    margin: 0 auto;
+  }
 }
 
 .example__progress-bar {
@@ -275,6 +322,10 @@
     border: none;
     background-color: transparent;
     transform: translate(4px, 11px);
+  }
+
+  @media (min-width: $desktop) {
+    padding: 0;
   }
 }
 

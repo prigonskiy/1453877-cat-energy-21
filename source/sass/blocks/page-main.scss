@@ -18,7 +18,22 @@
   }
 
   @media (min-width: $desktop) {
+    padding: 0;
     padding-top: 188px;
+  }
+}
+
+.page-main__header--catalog {
+  padding-top: 27px;
+  padding-bottom: 41px;
+
+  @media (min-width: $tablet) {
+    padding-top: 141px;
+  }
+
+  @media (min-width: $desktop) {
+    padding-top: 188px;
+    padding-left: 110px;
   }
 }
 

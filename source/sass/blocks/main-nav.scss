@@ -13,15 +13,3 @@
 .main-nav__wrapper {
   min-width: 280px;
 }
-
-.main-nav__list {
-  @media (min-width: $tablet) {
-    display: flex;
-    align-items: center;
-  }
-
-  @media (min-width: $desktop) {
-    display: flex;
-    align-items: center;
-  }
-}

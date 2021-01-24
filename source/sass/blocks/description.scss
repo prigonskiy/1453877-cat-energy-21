@@ -1,12 +1,12 @@
 .description {
-  padding-top: 27px;
+  padding-top: 28px;
   padding-bottom: 42px;
 
   @media (min-width: $tablet) {
     margin: 0;
     padding: 0 30px;
     padding-top: 45px;
-    padding-bottom: 33px;
+    padding-bottom: 47px;
   }
 
   @media (min-width: $desktop) {
@@ -55,16 +55,19 @@
 
   @media (min-width: $tablet) {
     display: grid;
-    grid-template-columns: 50% 50%;
-    grid-row-gap: 37px;
+    grid-template-columns: 1fr 1fr;
+    grid-row-gap: 77px;
+    grid-column-gap: 115px;
     list-style: none;
     padding: 0;
     margin: 0;
+    margin-top: 72px;
     counter-reset: li;
   }
 
   @media (min-width: $desktop) {
     display: flex;
+    gap: 0;
     justify-content: space-between;
     counter-reset: li;
   }
@@ -80,17 +83,21 @@
   }
 
   @media (min-width: $tablet) {
+    min-width: 270px;
     position: relative;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
     padding-bottom: 0;
     min-height: 240px;
-    padding-top: 40px;
 
     &:nth-last-child(1) {
       padding-bottom: 0;
     }
+  }
+
+  @media (min-width: $desktop) {
+    padding-right: 0;
   }
 }
 

@@ -10,7 +10,7 @@
   padding: 27px 19px;
   margin: 0;
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   align-items: center;
   background-color: $basic-background;
 
@@ -21,6 +21,7 @@
   @media (min-width: $tablet) {
     padding: 0 71px;
     min-height: 201px;
+    justify-content: space-between;
   }
 
   @media (min-width: $desktop) {
@@ -50,7 +51,7 @@
 
   @media (min-width: $tablet) {
     font-size: 20px;
-    line-height: 21px;
+    line-height: 25px;
   }
 }
 

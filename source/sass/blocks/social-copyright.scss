@@ -1,13 +1,18 @@
 .social-copyright {
-  padding: 22px 20px;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-top: 39px;
+  padding-bottom: 22px;
   margin: 0;
-  padding-top: 5px;
   background-color: $basic-background;
   min-width: 280px;
 
   @media (min-width: $tablet) {
     display: flex;
-    padding: 58px 30px;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-top: 55px;
+    padding-bottom: 58px;
     align-items: center;
     justify-content: space-between;
   }
@@ -19,14 +24,14 @@
 
 .social-copyright__logo {
   display: block;
-  padding-top: 39px;
-  padding-bottom: 32px;
-  width: 100%;
+  min-height: 24px;
+  height: 100%;
   background-image: url("../img/logo-name.svg");
   background-repeat: no-repeat;
   background-size: 128px 24px;
-  background-position: center center;
+  background-position: top center;
   margin: 0 auto;
+  padding-bottom: 32px;
   border-bottom: 1px solid $border-block;
 
   @media (min-width: $tablet) {
