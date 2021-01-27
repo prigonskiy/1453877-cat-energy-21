@@ -4,6 +4,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>HTML Academy: Кэт энерджи</title>
+
     <link href="css/style.min.css" rel="stylesheet">
   </head>
   <body class="page__body">
@@ -90,31 +91,39 @@
                 <label class="diet-form__label diet-form__label--radio" for="weight-gain">Набор массы</label>
               </li>
               <li class="diet-form__item">
-                <input class="visually-hidden diet-form__radio-input" type="radio" name="diet-program" id="need-advice" value="Не знаю, нужен совет">
-                <label class="diet-form__label diet-form__label--radio" for="need-advice">Не знаю, нужен совет</label>
+                <input class="visually-hidden diet-form__radio-input" type="radio" name="diet-program" id="need-advice" value="Не знаю (нужен ваш совет)">
+                <label class="diet-form__label diet-form__label--radio" for="need-advice">Не знаю (нужен ваш совет)</label>
               </li>
             </ul>
           </fieldset>
         </div>
         <fieldset class="diet-form__fieldset diet-form__fieldset--owner">
-          <legend class="diet-form__legend divider"><span class="divider--effect">Контактные данные (владельца кота)</span></legend>
+          <legend class="diet-form__legend divider">
+            <span class="divider__effect">Контактные данные (владельца кота)</span>
+          </legend>
           <ul class="diet-form__list diet-form__list--owner">
-            <li class="diet-form__item">
+            <li class="diet-form__item diet-form__item--owner">
               <label class="diet-form__label diet-form__label--text" for="owner-mail">E-Mail:*</label>
               <input class="diet-form__text-input diet-form__text-input--mail" type="email" id="owner-mail" placeholder="kuklachev@gmail.com" required>
+              <svg class="diet-form__icon diet-form__icon--mail" width="19" height="14">
+                <use xlink:href="img/sprite.svg#icon_mail"></use>
+              </svg>
             </li>
-            <li class="diet-form__item">
+            <li class="diet-form__item diet-form__item--owner">
               <label class="diet-form__label diet-form__label--text" for="owner-phone">Телефон:*</label>
               <input class="diet-form__text-input diet-form__text-input--phone" type="tel" id="owner-phone" placeholder="8 (960) 900-60-90" required>
+              <svg class="diet-form__icon diet-form__icon--phone" width="20" height="21">
+                <use xlink:href="img/sprite.svg#icon_phone"></use>
+              </svg>
             </li>
           </ul>
         </fieldset>
         <fieldset class="diet-form__fieldset diet-form__fieldset--habits">
-          <legend class="diet-form__legend divider"><span class="divider--effect">Комментарий</span></legend>
+          <legend class="diet-form__legend divider"><span class="divider__effect">Комментарий</span></legend>
           <textarea class="diet-form__textarea" name="habits" placeholder="Расскажите обо всех повадках кота"></textarea>
         </fieldset>
         <fieldset class="diet-form__fieldset diet-form__fieldset--additional">
-          <legend class="diet-form__legend divider"><span class="divider--effect">Дополнительно</span></legend>
+          <legend class="diet-form__legend divider"><span class="divider__effect">Дополнительно</span></legend>
           <ul class="diet-form__list diet-form__list--additional">
             <li class="diet-form__item">
               <input class="visually-hidden diet-form__checkbox-input" type="checkbox" id="sweetener" name="sweetener" checked>
@@ -136,8 +145,8 @@
         </fieldset>
         <div class="diet-form__wrapper">
           <button class="button button--submit" type="submit">Отправить заявку</button>
+          <p class="diet-form__disclaimer">* — Обязательные поля</p>
         </div>
-        <p class="diet-form__disclaimer">* — Обязательные поля</p>
       </form>
 
     </main>
@@ -158,37 +167,39 @@
         </div>
       </div>
       <div class="page-footer__social-copyright social-copyright">
-        <a class="social-copyright__logo" href="index.html"></a>
-        <ul class="social-copyright__social-list social-list">
-          <li class="social-list__item">
-            <a class="social-list__link social__link--vk" href="https://vk.com/htmlacademy" aria-label="Мы в VK">
-              <svg width="23" height="16" viewBox="0 0 23 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <use xlink:href="img/sprite.svg#social-vk"></use>
+        <div class="social-copyright__wrapper">
+          <a class="social-copyright__logo" href="index.html"></a>
+          <ul class="social-copyright__social-list social-list">
+            <li class="social-list__item">
+              <a class="social-list__link social-list__link--vk" href="https://vk.com/htmlacademy" aria-label="Мы в VK">
+                <svg class="social-list__icon" width="23" height="16" viewBox="0 0 23 16">
+                  <use xlink:href="img/sprite.svg#social-vk"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="social-list__item">
+              <a class="social-list__link social-list__link--instagram" href="https://instagram.com/htmlacademy" aria-label="Мы в Instagram">
+                <svg class="social-list__icon" width="16" height="16" viewBox="0 0 16 16">
+                  <use xlink:href="img/sprite.svg#social-instagram"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="social-list__item">
+              <a class="social-list__link social-list__link--facebook" href="https://facebook.com/htmlacademy" aria-label="Мы в Facebook">
+                <svg class="social-list__icon" width="22" height="22" viewBox="0 0 22 22">
+                  <use xlink:href="img/sprite.svg#social-facebook"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
+          <div class="social-copyright__academy academy">
+            <a class="academy__link" href="https://htmlacademy.ru/">HTML Academy</a>
+            <a class="academy__link" href="https://htmlacademy.ru/intensive/adaptive" aria-label="HTML и CSS, уровень 2">
+              <svg width="27" height="34">
+                <use xlink:href="img/sprite.svg#htmlacademy"></use>
               </svg>
             </a>
-          </li>
-          <li class="social-list__item">
-            <a class="social-list__link social__link--instagram" href="https://instagram.com/htmlacademy" aria-label="Мы в Instagram">
-              <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <use xlink:href="img/sprite.svg#social-instagram"></use>
-              </svg>
-            </a>
-          </li>
-          <li class="social-list__item">
-            <a class="social-list__link social__link--facebook" href="https://facebook.com/htmlacademy" aria-label="Мы в Facebook">
-              <svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <use xlink:href="img/sprite.svg#social-facebook"></use>
-              </svg>
-            </a>
-          </li>
-        </ul>
-        <div class="social-copyright__academy academy">
-          <a class="academy__link" href="https://htmlacademy.ru/">HTML Academy</a>
-          <a class="academy__link" href="https://htmlacademy.ru/intensive/adaptive" aria-label="HTML и CSS, уровень 2">
-            <svg width="27" height="34" viewBox="0 0 27 34" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <use xlink:href="img/sprite.svg#htmlacademy"></use>
-            </svg>
-          </a>
+          </div>
         </div>
       </div>
     </footer>

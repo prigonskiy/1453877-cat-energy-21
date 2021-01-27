@@ -9,8 +9,9 @@
   }
 
   @media (min-width: $desktop) {
-    margin: 0;
     padding: 0 110px;
+    width: 1220px;
+    margin: 0 auto;
   }
 }
 
@@ -45,7 +46,7 @@
   @media (min-width: $tablet) {
     padding: 0;
     padding-top: 77px;
-    padding-bottom: 55px;
+    padding-bottom: 56px;
     margin: 0;
     margin-bottom: 30px;
     flex-direction: column;
@@ -82,9 +83,8 @@
 
   @media (min-width: $tablet) {
     position: absolute;
-    right: 62px;
-    top: 50%;
-    transform: translateY(-50%);
+    right: 45px;
+    top: 92px;
     order: 3;
     width: 200px;
     height: 200px;
@@ -158,7 +158,7 @@
     padding-bottom: 25px;
     font-size: 36px;
     line-height: 36px;
-    width: 60%;
+    width: calc(100% - 282px);
   }
 
   @media (min-width: $desktop) {
@@ -184,9 +184,9 @@
   width: 100%;
 
   @media (min-width: $tablet) {
-    width: 53%;
+    width: calc(100% - 308px);
     padding: 0;
-    padding-left: 53px;
+    padding-left: 52px;
     padding-bottom: 52px;
     margin: 0;
     order: 2;
@@ -194,11 +194,15 @@
     font-size: 16px;
     line-height: 24px;
     min-height: 96px;
+
+    &--pro {
+      width: calc(100% - 348px);
+    }
   }
 
   @media (min-width: $desktop) {
     padding: 0;
-    padding-top: 43px;
+    padding-top: 41px;
     margin: 0;
     order: 3;
     width: 100%;
@@ -215,6 +219,10 @@
   line-height: 16px;
   padding: 19px 0;
   padding-right: 49px;
+
+  &:active {
+    opacity: 0.3;
+  }
 
   @media (min-width: $tablet) {
     padding: 0;
@@ -249,4 +257,8 @@
   @media (min-width: $tablet) {
     top: 10px;
   }
+}
+
+.diet__link:hover::after {
+  background-image: url("../img/icon_arrow_hover.svg");
 }

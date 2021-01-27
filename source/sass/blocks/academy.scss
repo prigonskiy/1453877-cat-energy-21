@@ -14,6 +14,26 @@
   font-weight: normal;
   font-size: 16px;
   line-height: 18px;
+
+  &:hover {
+    color: $accent-main;
+  }
+
+  &:active {
+    color: $accent-main;
+    opacity: 0.3;
+  }
+}
+
+.academy__link svg {
+  &:hover {
+    fill: $accent-main;
+  }
+
+  &:active {
+    fill: $accent-main;
+    opacity: 0.3;
+  }
 }
 
 @media (min-width: $tablet) {

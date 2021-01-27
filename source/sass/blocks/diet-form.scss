@@ -4,7 +4,11 @@
 
   @media (min-width: $tablet) {
     margin-top: 54px;
-    margin-bottom: 85px;
+    margin-bottom: 72px;
+  }
+
+  @media (min-width: $desktop) {
+    margin-bottom: 82px;
   }
 }
 
@@ -16,6 +20,7 @@
   padding: 0;
   margin-right: 20px;
   margin-left: 20px;
+  margin-bottom: 17px;
 
   @media (min-width: $tablet) {
     margin-left: 70px;
@@ -24,9 +29,11 @@
     line-height: 30px;
   }
 
-  @media (min-width: $tablet) {
-    margin-left: 110px;
-    margin-right: 110px;
+  @media (min-width: $desktop) {
+    margin: 0 auto;
+    width: 1220px;
+    padding-left: 110px;
+    padding-right: 110px;
   }
 }
 
@@ -35,21 +42,39 @@
     display: grid;
     grid-template-columns: 1fr 1fr;
     column-gap: 80px;
-    margin-right: 110px;
-    margin-left: 110px;
+    margin: 0 auto;
+    width: 1220px;
+    padding-right: 110px;
+    padding-left: 110px;
     align-items: center;
-    margin-top: 66px;
+    margin-top: 63px;
   }
 }
 
 .diet-form__fieldset {
   border: none;
-  padding: 20px 0;
+  padding: 21px 0;
+  padding-bottom: 23px;
   margin: 0;
 
   &--personal,
   &--type {
     border-bottom: 1px solid $border-block;
+    padding-top: 22px;
+  }
+
+  &--owner {
+    margin-top: 26px;
+    padding-bottom: 8px;
+  }
+
+  &--type {
+    padding-bottom: 17px;
+  }
+
+  &--habits {
+    min-width: 280px;
+    padding-bottom: 18px;
   }
 
   @media (min-width: $tablet) {
@@ -57,9 +82,9 @@
       border: none;
       margin: 0;
       padding: 0;
-      margin-left: 70px;
-      margin-right: 70px;
-      margin-top: 66px;
+      margin-right: 67px;
+      margin-left: 71px;
+      margin-top: 63px;
     }
 
     &--type {
@@ -68,11 +93,16 @@
       border: 1px solid $border-input;
       margin-left: 70px;
       margin-right: 70px;
-      margin-top: 72px;
+      margin-top: 48px;
     }
 
     &--owner {
       margin-top: 71px;
+      margin-bottom: 35px;
+    }
+
+    &--habits {
+      padding-bottom: 55px;
     }
   }
 
@@ -83,18 +113,38 @@
       margin-right: 0;
       margin-top: 0;
     }
+
+    &--habits {
+      padding-bottom: 64px;
+    }
+
+    &--owner {
+      margin-top: 64px;
+      margin-bottom: 40px;
+    }
   }
 }
 
 .diet-form__legend {
   font-size: 24px;
   line-height: 26px;
-  width: 100%;
+  width: 99%;
+  padding-left: 0;
 
   @media (min-width: $tablet) {
     font-size: 36px;
     line-height: 36px;
     margin-bottom: 76px;
+  }
+}
+
+.diet-form__fieldset--owner .diet-form__legend {
+  @media (min-width: $tablet) {
+    margin-bottom: 39px;
+  }
+
+  @media (min-width: $desktop) {
+    margin-bottom: 51px;
   }
 }
 
@@ -104,19 +154,23 @@
   }
 
   @media (min-width: $desktop) {
-    margin-bottom: 76px;
+    margin-bottom: 50px;
   }
 }
 
 .diet-form__fieldset--additional .diet-form__legend {
+  @media (min-width: $tablet) {
+    margin-bottom: 22px;
+  }
+
   @media (min-width: $desktop) {
-    margin-bottom: 57px;
+    margin-bottom: 32px;
   }
 }
 
 .diet-form__list {
   margin: 0;
-  padding: 0 20px;
+  padding: 0 19px;
   list-style: none;
 
   @media (min-width: $tablet) {
@@ -125,27 +179,38 @@
   }
 
   &--additional {
+    margin-top: 13px;
+
     @media (min-width: $tablet) {
+      margin-top: 10px;
       display: flex;
       flex-wrap: wrap;
-      padding: 0 70px;
-      width: 100%;
+      padding-left: 70px;
+      padding-right: 0;
+      width: auto;
       justify-content: flex-start;
     }
 
     @media (min-width: $desktop) {
-      padding: 0 110px;
-      margin-bottom: 50px;
+      padding: 0;
+      justify-content: space-between;
+      margin: 0 auto;
+      width: 1220px;
+      margin-bottom: 35px;
     }
   }
 
   &--owner {
+    margin-top: 11px;
+
     @media (min-width: $desktop) {
       display: grid;
       grid-template-columns: 1fr 1fr;
       column-gap: 80px;
-      margin-right: 110px;
-      margin-left: 110px;
+      margin: 0 auto;
+      width: 1220px;
+      padding-right: 110px;
+      padding-left: 110px;
     }
   }
 }
@@ -154,6 +219,7 @@
   display: flex;
   align-items: center;
   margin-bottom: 13px;
+  position: relative;
 
   &:nth-last-child(1) {
     margin-bottom: 0;
@@ -161,6 +227,8 @@
 }
 
 .diet-form__list--owner .diet-form__item {
+  margin-bottom: 16px;
+
   @media (min-width: $tablet) {
     margin-bottom: 20px;
     margin-left: 71px;
@@ -175,7 +243,7 @@
 
 .diet-form__list--personal .diet-form__item {
   @media (min-width: $tablet) {
-    margin-bottom: 20px;
+    margin-bottom: 19px;
   }
 
   @media (min-width: $desktop) {
@@ -186,12 +254,17 @@
 }
 
 .diet-form__list--additional .diet-form__item {
+  margin-bottom: 12px;
+
   @media (min-width: $tablet) {
-    width: 45%;
+    width: 340px;
+    margin-bottom: 30px;
   }
 
   @media (min-width: $desktop) {
-    width: 25%;
+    width: 245px;
+    margin: 0;
+    padding: 0;
   }
 }
 
@@ -202,7 +275,7 @@
   font-size: 16px;
   line-height: 18px;
   text-transform: uppercase;
-  padding-right: 15px;
+  padding-right: 16px;
 
   &--text {
     color: $text-light;
@@ -214,6 +287,11 @@
     padding: 6px 0;
     padding-left: 45px;
   }
+
+  &--checkbox {
+    color: $basic-black;
+  }
+
 
   @media (min-width: $tablet) {
     font-size: 20px;
@@ -241,6 +319,11 @@
   font-weight: normal;
   padding: 13px 15px;
   flex-grow: 1;
+  appearance: textfield;
+
+  &--mail {
+    padding-right: 45px;
+  }
 
   &:hover {
     border-color: $border-list;
@@ -252,8 +335,55 @@
   }
 
   @media (min-width: $tablet) {
+    padding: 11px 18px;
     font-size: 20px;
     line-height: 30px;
+
+    &--mail {
+      padding-right: 45px;
+    }
+
+    &:hover {
+      border-color: $border-list;
+    }
+
+    &:focus {
+      border: 2px solid $text-light;
+      padding: 10px 17px;
+    }
+  }
+}
+
+.diet-form__icon {
+  position: absolute;
+  content: "";
+
+  &--mail {
+    right: 16px;
+    width: 19px;
+    height: 14px;
+    top: 18px;
+
+    @media (min-width: $tablet) {
+      width: 18px;
+      height: 13px;
+      top: 19px;
+      right: 19px;
+    }
+  }
+
+  &--phone {
+    right: 13px;
+    width: 20px;
+    height: 21px;
+    top: 13px;
+
+    @media (min-width: $tablet) {
+      width: 20px;
+      height: 20px;
+      top: 16px;
+      right: 17px;
+    }
   }
 }
 
@@ -278,8 +408,16 @@
   background-image: url("../img/icon_radio-off_hover.svg");
 }
 
+.diet-form__radio-input:focus + .diet-form__label--radio::before {
+  outline: 1px solid $basic-black;
+}
+
 .diet-form__radio-input:disabled + .diet-form__label--radio::before {
-  background-image: url("../img/icon_radio-off_disabled.svg");
+  background-image: url("../img/icon_radio-off_hover.svg");
+}
+
+.diet-form__radio-input:disabled + .diet-form__label {
+  opacity: 0.3;
 }
 
 .diet-form__radio-input:checked + .diet-form__label--radio::before {
@@ -291,26 +429,11 @@
 }
 
 .diet-form__radio-input:checked:disabled + .diet-form__label--radio::before {
-  background-image: url("../img/icon_radio-on_disabled.svg");
+  background-image: url("../img/icon_radio-on_hover.svg");
 }
 
-.diet-form__fieldset--habits {
-  min-width: 280px;
-
-  @media (min-width: $tablet) {
-    padding-bottom: 65px;
-  }
-
-  @media (min-width: $desktop) {
-    padding-bottom: 67px;
-  }
-}
-
-.diet-form__text-input--mail {
-  background-repeat: no-repeat;
-  background-image: url("../img/diet-form_icon_mail.svg");
-  background-position: 95%;
-  background-size: 20px 14px;
+.diet-form__radio-input:checked:disabled + .diet-form__label {
+  opacity: 0.3;
 }
 
 .diet-form__textarea {
@@ -320,15 +443,17 @@
   color: $text-light;
   font-size: 16px;
   line-height: 18px;
-  width: 100%;
+  width: calc(100% - 40px);
   min-height: 150px;
   outline: none;
   border: 1px solid $border-input;
-  padding: 10px 15px;
+  padding: 10px 14px;
   margin-left: 20px;
   margin-right: 20px;
+  margin-top: 17px;
 
   @media (min-width: $tablet) {
+    margin-top: 0;
     margin-left: 70px;
     margin-right: 70px;
     width: calc(100% - 140px);
@@ -337,9 +462,10 @@
     line-height: 30px;
 
     @media (min-width: $desktop) {
-      width: calc(100% - 220px);
-      margin-left: 110px;
+      width: 1220px;
+      margin-left: calc(50% - 610px);
       margin-right: 110px;
+      padding: 10px 19px;
     }
   }
 }
@@ -365,8 +491,16 @@
   background-image: url("../img/icon_check-off_hover.svg");
 }
 
+.diet-form__checkbox-input:focus + .diet-form__label--checkbox::before {
+  outline: 1px solid $basic-black;
+}
+
 .diet-form__checkbox-input:disabled + .diet-form__label--checkbox::before {
-  background-image: url("../img/icon_check-off_disabled.svg");
+  background-image: url("../img/icon_check-off_hover.svg");
+}
+
+.diet-form__checkbox-input:disabled + .diet-form__label {
+  opacity: 0.3;
 }
 
 .diet-form__checkbox-input:checked + .diet-form__label--checkbox::before {
@@ -378,7 +512,26 @@
 }
 
 .diet-form__checkbox-input:checked:disabled + .diet-form__label--checkbox::before {
-  background-image: url("../img/icon_check-on_disabled.svg");
+  background-image: url("../img/icon_check-on_hover.svg");
+}
+
+.diet-form__checkbox-input:checked:disabled + .diet-form__label {
+  opacity: 0.3;
+}
+
+.diet-form__wrapper {
+  min-width: 280px;
+  padding: 0 20px;
+
+  @media (min-width: $tablet) {
+    padding: 0 70px;
+  }
+
+  @media (min-width: $desktop) {
+    margin: 0 auto;
+    padding: 0 110px;
+    width: 1220px;
+  }
 }
 
 .diet-form__disclaimer {
@@ -388,22 +541,20 @@
   font-size: 14px;
   line-height: 16px;
   text-align: center;
+  margin-top: 21px;
+  margin-bottom: 32px;
 
   @media (min-width: $tablet) {
     display: inline-block;
-    width: calc(50% - 71px);
+    width: auto;
     font-size: 16px;
+    margin: 0;
+    padding: 0;
+    min-width: 190px;
+    margin-left: 55px;
   }
-}
 
-.diet-form__wrapper {
-  min-width: 280px;
-  padding: 0 20px;
-
-  @media (min-width: $tablet) {
-    display: inline-block;
-    width: calc(50% - 71px);
-    padding-right: 0;
-    padding-left: 71px;
+  @media (min-width: $desktop) {
+    margin-left: 75px;
   }
 }

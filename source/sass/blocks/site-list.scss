@@ -8,11 +8,13 @@
     align-items: center;
     flex-wrap: wrap;
     justify-content: flex-end;
+    padding-top: 9px;
   }
 
   @media (min-width: $desktop) {
     display: flex;
     align-items: center;
+    padding-top: 0;
   }
 }
 
@@ -22,11 +24,11 @@
   @media (min-width: $tablet) {
     position: relative;
     border: none;
-    margin-left: 20px;
+    margin-left: 35px;
   }
 
   @media (min-width: $desktop) {
-    margin-left: 37px;
+    margin-left: 35px;
   }
 }
 
@@ -78,6 +80,14 @@
   font-weight: 500;
   line-height: 20px;
   color: $basic-black;
+
+  &:hover {
+    opacity: 0.6;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
 
   @media (min-width: $tablet) {
     font-size: 18px;

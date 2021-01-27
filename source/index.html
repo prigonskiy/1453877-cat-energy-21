@@ -4,6 +4,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>HTML Academy: Кэт энерджи</title>
+    <link rel="preload" href="/fonts/oswaldregular.woff2" as="font">
     <link href="css/style.min.css" rel="stylesheet">
   </head>
   <body class="page__body">
@@ -59,7 +60,7 @@
 
       <section class="nutrition">
         <div class="nutrition__overlay"></div>
-        <div class="nutrition__wrapper">
+        <div class="nutrition__info-wrapper">
           <h2 class="nutrition__header">
             Функциональное <br>питание для котов
           </h2>
@@ -86,7 +87,7 @@
               <h3 class="diet__title">
                 Похудение
               </h3>
-              <p class="diet__info">
+              <p class="diet__info diet__info--slim">
                 Ваш кот весит больше собаки и почти утратил способность лазить по деревьям? Пора на диету! Cat Energy Slim поможет вашему питомцу сбросить лишний вес.
               </p>
               <a class="diet__link" href="catalog.html">
@@ -98,7 +99,7 @@
               <h3 class="diet__title">
                 Набор массы
               </h3>
-              <p class="diet__info">
+              <p class="diet__info diet__info--pro">
                 Заработать авторитет среди дворовых котов и даже собак? Серия Cat Energy Pro поможет вашему коту нарастить необходимые мышцы!
               </p>
               <a class="diet__link" href="catalog.html">
@@ -167,7 +168,7 @@
             <div class="example__buttons-block">
               <button class="example__progress-button example__progress-button--before" type="button">Было</button>
               <div class="example__progress-bar">
-                <input class="example__range" type="range" min="1" max="100" value="1">
+                <input class="example__range" type="range" min="0" max="100" value="50">
                 <div class="example__progress-toggle"></div>
               </div>
               <button class="example__progress-button example__progress-button--after" type="button">Стало</button>
@@ -195,37 +196,39 @@
         </div>
       </div>
       <div class="page-footer__social-copyright social-copyright">
-        <a class="social-copyright__logo"></a>
-        <ul class="social-copyright__social-list social-list">
-          <li class="social-list__item">
-            <a class="social-list__link social__link--vk" href="https://vk.com/htmlacademy" aria-label="Мы в VK">
-              <svg>
-                <use xlink:href="img/sprite.svg#social-vk"></use>
+        <div class="social-copyright__wrapper">
+          <a class="social-copyright__logo"></a>
+          <ul class="social-copyright__social-list social-list">
+            <li class="social-list__item">
+              <a class="social-list__link social-list__link--vk" href="https://vk.com/htmlacademy" aria-label="Мы в VK">
+                <svg class="social-list__icon" width="23" height="16">
+                  <use xlink:href="img/sprite.svg#social-vk"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="social-list__item">
+              <a class="social-list__link social-list__link--instagram" href="https://instagram.com/htmlacademy" aria-label="Мы в Instagram">
+                <svg class="social-list__icon" width="16" height="16">
+                  <use xlink:href="img/sprite.svg#social-instagram"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="social-list__item">
+              <a class="social-list__link social-list__link--facebook" href="https://facebook.com/htmlacademy" aria-label="Мы в Facebook">
+                <svg class="social-list__icon" width="22" height="22">
+                  <use xlink:href="img/sprite.svg#social-facebook"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
+          <div class="social-copyright__academy academy">
+            <a class="academy__link" href="https://htmlacademy.ru/">HTML Academy</a>
+            <a class="academy__link" href="https://htmlacademy.ru/intensive/adaptive" aria-label="HTML и CSS, уровень 2">
+              <svg width="27" height="34">
+                <use xlink:href="img/sprite.svg#htmlacademy"></use>
               </svg>
             </a>
-          </li>
-          <li class="social-list__item">
-            <a class="social-list__link social__link--instagram" href="https://instagram.com/htmlacademy" aria-label="Мы в Instagram">
-              <svg>
-                <use xlink:href="img/sprite.svg#social-instagram"></use>
-              </svg>
-            </a>
-          </li>
-          <li class="social-list__item">
-            <a class="social-list__link social__link--facebook" href="https://facebook.com/htmlacademy" aria-label="Мы в Facebook">
-              <svg>
-                <use xlink:href="img/sprite.svg#social-facebook"></use>
-              </svg>
-            </a>
-          </li>
-        </ul>
-        <div class="social-copyright__academy academy">
-          <a class="academy__link" href="https://htmlacademy.ru/">HTML Academy</a>
-          <a class="academy__link" href="https://htmlacademy.ru/intensive/adaptive" aria-label="HTML и CSS, уровень 2">
-            <svg width="27" height="34" viewBox="0 0 27 34" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <use xlink:href="img/sprite.svg#htmlacademy"></use>
-            </svg>
-          </a>
+          </div>
         </div>
       </div>
     </footer>

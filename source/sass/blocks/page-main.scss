@@ -33,7 +33,9 @@
 
   @media (min-width: $desktop) {
     padding-top: 188px;
-    padding-left: 110px;
+    padding-left: 0;
+    margin: 0 auto;
+    width: 1220px;
   }
 }
 
@@ -44,5 +46,8 @@
 
   @media (min-width: $desktop) {
     padding-left: 110px;
+    padding-right: 110px;
+    margin: 0 auto;
+    width: 1220px;
   }
 }

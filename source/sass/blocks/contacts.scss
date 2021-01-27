@@ -19,7 +19,7 @@
   }
 
   @media (min-width: $tablet) {
-    padding: 0 71px;
+    padding: 0 70px;
     min-height: 201px;
     justify-content: space-between;
   }
@@ -27,13 +27,14 @@
   @media (min-width: $desktop) {
     position: absolute;
     top: 95px;
-    left: 110px;
+    left: 0;
     padding: 0;
-    width: calc(50% - 150px);
+    margin-left: calc(50% - 610px);
+    width: 570px;
     min-height: 201px;
     font-size: 20px;
     line-height: 21px;
-    justify-content: space-around;
+    justify-content: space-evenly;
     background-color: $basic-white;
   }
 }
@@ -52,6 +53,10 @@
   @media (min-width: $tablet) {
     font-size: 20px;
     line-height: 25px;
+  }
+
+  @media (min-width: $desktop) {
+    line-height: 26px;
   }
 }
 

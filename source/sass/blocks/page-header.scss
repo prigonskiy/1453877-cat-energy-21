@@ -4,9 +4,9 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding-top: 18px;
+    padding-top: 17px;
     padding-left: 30px;
-    padding-right: 30px;
+    padding-right: 15px;
     z-index: 1;
     top: 0;
     left: 0;
@@ -15,7 +15,9 @@
   }
 
   @media (min-width: $desktop) {
-    padding: 53px 110px;
+    padding: 51px 110px;
+    width: 1220px;
+    margin: 0 auto;
   }
 }
 
@@ -31,6 +33,17 @@
 
   @media (min-width: $tablet) {
     padding: 0;
+    min-width: auto;
+  }
+}
+
+.page-header__logo {
+  &:hover {
+    opacity: 0.8;
+  }
+
+  &:active {
+    opacity: 0.6;
   }
 }
 
